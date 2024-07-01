@@ -1,1 +1,15 @@
-<p>list-cars works!</p>
+<div *ngIf="characterList.length">
+  <h3>list Cars</h3>
+
+  <div *ngFor="let character of characterList">
+    <h4>{{character._id}}--{{character.cocheName}}</h4>
+    <p>Modelo: {{character.cocheModel}}</p>
+    <p>Potencia: {{character.cochePower}} cv</p>
+    <p>Precio: {{character.cochePrice}}€</p>
+    <p>Combustible: {{character.cochefuel}}</p>
+    <p>Color: {{character.cocheColor}}</p>
+    <img [src]="character.cocheImg" [alt]="character.cocheName" >
+
+  </div>
+
+</div>
