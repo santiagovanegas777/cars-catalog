@@ -17,7 +17,7 @@ export class ListCarsComponent {
   }
 
   private getCharacters(){
-    this.requestService.getCharacters().subscribe((data: CharacterResponseInterface) => {
+    this.requestService.getApiCharacters().subscribe((data: CharacterResponseInterface) => {
       console.log(data.coches)
       this.characterList = this.characterList =data.coches;
     })
