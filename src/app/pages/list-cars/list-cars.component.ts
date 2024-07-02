@@ -22,4 +22,10 @@ export class ListCarsComponent {
       this.characterList = this.characterList =data.coches;
     })
   }
+
+ public getDetail(_id: string){
+    this.requestService.getApiDetailCharacter(_id).subscribe(data =>{
+      console.log(data);
+    });
+  }
 }

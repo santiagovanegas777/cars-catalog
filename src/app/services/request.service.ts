@@ -13,4 +13,9 @@ export class RequestService {
   getApiCharacters(): Observable<CharacterResponseInterface>{
     return this.httpClient.get<CharacterResponseInterface>('https://api-catalogo-coches.vercel.app/coches')
   }
+
+  getApiDetailCharacter(_id:string):Observable<any>{
+    return this.httpClient.get<any>('https://api-catalogo-coches.vercel.app/coches/id/' + _id)
+
+  }
 }
