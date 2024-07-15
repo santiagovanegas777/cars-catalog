@@ -1,6 +1,8 @@
-import { RequestService } from './../../services/request.service';
+
+
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { DetailServiceService } from './detail-service.service';
 
 @Component({
   selector: 'app-detail-cars',
@@ -9,8 +11,7 @@ import { Component } from '@angular/core';
 })
 export class DetailCarsComponent {
 
-
-
+  constructor(){}
 
 
 

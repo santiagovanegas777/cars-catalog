@@ -1,6 +1,7 @@
 
 import { Component } from '@angular/core';
 import { CarsserviceService } from './carsservice.service';
+import { DetailServiceService } from '../detail-cars/detail-service.service';
 
 @Component({
   selector: 'app-cars',
@@ -10,8 +11,9 @@ import { CarsserviceService } from './carsservice.service';
 export class CarsComponent {
   characterList: any = [];
   currenPage: number = 1;
+  characterDetail: any=[];
 
-  constructor(private carsService: CarsserviceService){}
+  constructor(private carsService: CarsserviceService , public detailService: DetailServiceService){}
 
   ngOnInit() {
     this.getCars(this.currenPage);
@@ -33,6 +35,14 @@ if(action === 'prev' && this.currenPage !== 1){
   this.currenPage = this.currenPage + 1;
   this.getCars(this.currenPage);
 }
+
+}
+
+public getDetail(_id: string){
+  this.detailService.getApiDetailCharacter(_id).subscribe(data =>{
+    console.log(data)
+    this.characterDetail = this.characterDetail = data;
+  });
 
 }
 
