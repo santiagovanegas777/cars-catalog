@@ -38,13 +38,13 @@ if(action === 'prev' && this.currenPage !== 1){
 
 }
 
-public getDetail(_id: string){
-  this.detailService.getApiDetailCharacter(_id).subscribe(data =>{
-    console.log(data)
-    this.characterDetail = this.characterDetail = data;
-  });
+// public getDetail(_id: string){
+//   this.detailService.getApiDetailCharacter(_id).subscribe(data =>{
+//     console.log(data)
+//     this.characterDetail = this.characterDetail = data;
+//   });
 
-}
+// }
 
 
 }

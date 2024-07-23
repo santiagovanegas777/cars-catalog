@@ -1,1 +1,18 @@
 <p>detail-cars works!</p>
+<div >
+  <h3> Cars</h3>
+
+  <div >
+    <h4>{{characterDetail._id}}--{{characterDetail.cocheName}}</h4>
+    <p>Modelo: {{characterDetail.cocheModel}}</p>
+    <p>Potencia: {{characterDetail.cochePower}} cv</p>
+    <p>Precio: {{characterDetail.cochePrice}}€</p>
+    <p>Combustible: {{characterDetail.cochefuel}}</p>
+    <p>Color: {{characterDetail.cocheColor}}</p>
+    <img [src]="characterDetail.cocheImg" [alt]="characterDetail.cocheName"  >
+
+
+
+  </div>
+
+</div>
