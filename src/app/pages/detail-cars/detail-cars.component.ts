@@ -4,6 +4,7 @@
 import { Component } from '@angular/core';
 import { DetailServiceService } from './detail-service.service';
 import { ActivatedRoute } from '@angular/router';
+import { CharacterInterface, _idInterface } from 'src/app/models/character.model';
 
 @Component({
   selector: 'app-detail-cars',
@@ -11,7 +12,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./detail-cars.component.scss']
 })
 export class DetailCarsComponent {
-  characterDetail: any=[];
+  characterDetail!: CharacterInterface;
 
   constructor(private ruta:ActivatedRoute, private detailService:DetailServiceService){}
 
@@ -22,9 +23,9 @@ export class DetailCarsComponent {
     })
   }
 
-  public getDetail(_id: string){
-    this.detailService.getApiDetailCharacter(_id).subscribe((data:any)=>{
-      
+  public getDetail(_id: _idInterface){
+    this.detailService.getApiDetailCharacter(_id).subscribe((data:CharacterInterface)=>{
+
       this.characterDetail = data;
       console.log(this.characterDetail);
     });

@@ -19,3 +19,8 @@ export interface CharacterResponseInterface{
   coches:CharacterInterface[];
 
 }
+
+
+export interface _idInterface {
+  _id: string;
+}

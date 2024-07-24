@@ -2,6 +2,7 @@
 import { Component } from '@angular/core';
 import { CarsserviceService } from './carsservice.service';
 import { DetailServiceService } from '../detail-cars/detail-service.service';
+import { CharacterInterface, CharacterResponseInterface } from 'src/app/models/character.model';
 
 @Component({
   selector: 'app-cars',
@@ -9,7 +10,7 @@ import { DetailServiceService } from '../detail-cars/detail-service.service';
   styleUrls: ['./cars.component.scss']
 })
 export class CarsComponent {
-  characterList: any = [];
+  characterList: CharacterInterface[] = [];
   currenPage: number = 1;
   characterDetail: any=[];
 
@@ -20,7 +21,7 @@ export class CarsComponent {
   }
 
   private getCars(page:number){
-    this.carsService.getApiCars(page).subscribe((data:any)=>{
+    this.carsService.getApiCars(page).subscribe((data:CharacterResponseInterface)=>{
       console.log(data.coches)
       this.characterList = this.characterList= data.coches;
     })
