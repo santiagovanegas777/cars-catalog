@@ -1,3 +1,4 @@
+import { LoginService } from './login.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,39 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
+  public email: string = '';
+  public password: string = '';
+
+
+constructor(public loginService:LoginService){}
+
+ngOnit(){
+  console.log(this.loginService.token);
+}
+
+public onSubmit() {
+
+
+  const obj = {
+    email: this.email,
+    password: this.password
+  };
+
+  this.login(obj);
+
+}
+
+
+private login(obj:any){
+  this.loginService.login(obj).subscribe(data => {
+    console.log(data);
+    console.log(this.loginService.token);
+   
+  })
+}
+
+
+
+
 
 }

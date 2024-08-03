@@ -1,1 +1,13 @@
-<p>login works!</p>
+
+
+<form (ngSubmit)="onSubmit()" #form="ngForm">
+  <label for="email">Email</label>
+<input type="text" name="email" id="email" [(ngModel)]="email">
+<label for="password">password</label>
+<input type="text" name="password" id="password" [(ngModel)]="password">
+<button type="submit">Login</button>
+</form>
+
+<p *ngIf="this.loginService.token ">
+  Estas logado!!!
+</p>
