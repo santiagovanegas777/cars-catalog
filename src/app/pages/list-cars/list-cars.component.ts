@@ -33,7 +33,7 @@ export class ListCarsComponent {
 
 public getUser(){
   this.requestService.getApiUser().subscribe((data:any)=>{
-    console.log(data)
+   
     this.userList = this.userList = data;
     console.log(this.userList)
   })

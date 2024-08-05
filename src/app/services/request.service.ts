@@ -19,13 +19,20 @@ export class RequestService {
     return this.httpClient.get<any>('https://api-catalogo-coches.vercel.app/coches/id/' + _id)
 
   }
+///como hacer una peticion a la api enviado el token en los headers
+  // getApiUser(): Observable<any>{
+  //   let headers = new HttpHeaders();
+  //   headers = headers.set('Authorization', `Bearer ${this.loginService.token}`);
+
+  //   return this.httpClient.get('https://api-catalogo-coches.vercel.app/users/',{
+  //     headers: headers
+  //   })
+  // }
+
 
   getApiUser(): Observable<any>{
-    let headers = new HttpHeaders();
-    headers = headers.set('Authorization', `Bearer ${this.loginService.token}`);
-
     return this.httpClient.get('https://api-catalogo-coches.vercel.app/users/',{
-      headers: headers
+
     })
   }
 }
