@@ -9,7 +9,7 @@ import { Observable, map } from 'rxjs';
   providedIn: 'root'
 })
 export class LoginService {
-  token: string | null = null;
+  token: string | null = sessionStorage.getItem('token-app');
 
   constructor(private httpClient: HttpClient) { }
 
@@ -18,6 +18,7 @@ export class LoginService {
    return this.httpClient.post('https://api-catalogo-coches.vercel.app/users/login', obj).pipe(
     map((response: any) =>{
       this.token = response.token;
+      sessionStorage.setItem('token-app', response.token);
       return response;
     })
    );
