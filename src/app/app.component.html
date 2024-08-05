@@ -5,9 +5,14 @@
 <ul>
   <li><a routerLink="/home">HOME</a></li>
   <li><a routerLink="/list-cars">List Cars</a></li>
-  <li><a routerLink="/login">Login</a></li>
+  <li><a *ngIf="!loginService.token" routerLink="/login">Login</a></li>
   <li><a routerLink="/contact">Contact</a></li>
   <li><a routerLink="/cars">Cars</a></li>
+
 </ul>
+<button *ngIf="loginService.token" (click)="logout()">Logout</button>
 </div>
+
+
 <router-outlet></router-outlet>
+

@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { CarsserviceService } from './carsservice.service';
 import { DetailServiceService } from '../detail-cars/detail-service.service';
 import { CharacterInterface, CharacterResponseInterface } from 'src/app/models/character.model';
+import { LoginService } from '../login/login.service';
 
 @Component({
   selector: 'app-cars',
@@ -14,7 +15,7 @@ export class CarsComponent {
   currenPage: number = 1;
   characterDetail: any=[];
 
-  constructor(private carsService: CarsserviceService , public detailService: DetailServiceService){}
+  constructor(private carsService: CarsserviceService , public detailService: DetailServiceService, public loginService: LoginService){}
 
   ngOnInit() {
     this.getCars(this.currenPage);
