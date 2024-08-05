@@ -9,11 +9,13 @@ import { RequestService } from 'src/app/services/request.service';
 })
 export class ListCarsComponent {
   characterList: CharacterInterface[] = [];
+  userList: any[] = [];
 
   constructor(private requestService: RequestService){}
 
   ngOnInit() {
     this.getCharacters();
+    this.getUser();
   }
 
   private getCharacters(){
@@ -27,6 +29,14 @@ export class ListCarsComponent {
       console.log(data);
     });
 
+}
+
+public getUser(){
+  this.requestService.getApiUser().subscribe((data:any)=>{
+    console.log(data)
+    this.userList = this.userList = data;
+    console.log(this.userList)
+  })
 }
 
   }
