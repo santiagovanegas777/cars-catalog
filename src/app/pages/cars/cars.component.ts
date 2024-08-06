@@ -12,7 +12,7 @@ import { LoginService } from '../login/login.service';
 })
 export class CarsComponent {
   characterList: CharacterInterface[] = [];
-  currenPage: number = 1;
+  currenPage = 1;
   characterDetail: any=[];
 
   constructor(private carsService: CarsserviceService , public detailService: DetailServiceService, public loginService: LoginService){}
@@ -23,9 +23,9 @@ export class CarsComponent {
 
   private getCars(page:number){
     this.carsService.getApiCars(page).subscribe((data:CharacterResponseInterface)=>{
-      console.log(data.coches)
+      console.log(data.coches);
       this.characterList = this.characterList= data.coches;
-    })
+    });
   }
 
 handlePaginatior(action:string ){

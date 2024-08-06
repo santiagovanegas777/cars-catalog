@@ -20,23 +20,23 @@ export class ListCarsComponent {
 
   private getCharacters(){
     this.requestService.getApiCharacters().subscribe((data: CharacterResponseInterface) => {
-      console.log(data.coches)
+      console.log(data.coches);
       this.characterList = this.characterList =data.coches;
-    })
-  }
-  public getDetail(_id: string){
-    this.requestService.getApiDetailCharacter(_id).subscribe(data =>{
-      console.log(data);
     });
+  }
+//   public getDetail(_id: string){
+//     this.requestService.getApiDetailCharacter(_id).subscribe(data =>{
+//       console.log(data);
+//     });
 
-}
+// }
 
 public getUser(){
   this.requestService.getApiUser().subscribe((data:any)=>{
-   
+
     this.userList = this.userList = data;
-    console.log(this.userList)
-  })
+    console.log(this.userList);
+  });
 }
 
   }

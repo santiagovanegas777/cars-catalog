@@ -1,6 +1,3 @@
-
-
-
 import { Component } from '@angular/core';
 import { DetailServiceService } from './detail-service.service';
 import { ActivatedRoute } from '@angular/router';
@@ -20,7 +17,7 @@ export class DetailCarsComponent {
     this.ruta.params.subscribe(params=>{
       console.log(params['id']);
       this.getDetail(params['id']);
-    })
+    });
   }
 
   public getDetail(_id: _idInterface){
@@ -31,7 +28,4 @@ export class DetailCarsComponent {
     });
 
   }
-
-
-
 }

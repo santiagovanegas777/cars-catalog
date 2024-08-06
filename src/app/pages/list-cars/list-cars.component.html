@@ -8,8 +8,7 @@
     <p>Precio: {{character.cochePrice}}€</p>
     <p>Combustible: {{character.cochefuel}}</p>
     <p>Color: {{character.cocheColor}}</p>
-    <img [src]="character.cocheImg" [alt]="character.cocheName" (click)="getDetail(character._id)" >
-    <a [routerLink]="['/detail-cars']">detalle</a>
+    <img [src]="character.cocheImg" [alt]="character.cocheName" >
 
   </div>
 

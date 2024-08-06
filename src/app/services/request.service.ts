@@ -13,11 +13,11 @@ export class RequestService {
   constructor(private httpClient: HttpClient, private loginService: LoginService) { }
 
   getApiCharacters(): Observable<CharacterResponseInterface>{
-    return this.httpClient.get<CharacterResponseInterface>(`${environment.API}/coches`)
+    return this.httpClient.get<CharacterResponseInterface>(`${environment.API}/coches`);
   }
 
   getApiDetailCharacter(_id:string):Observable<any>{
-    return this.httpClient.get<any>(`${environment.API}/id/` + _id)
+    return this.httpClient.get<any>(`${environment.API}/id/` + _id);
 
   }
 ///como hacer una peticion a la api enviado el token en los headers
@@ -34,6 +34,6 @@ export class RequestService {
   getApiUser(): Observable<any>{
     return this.httpClient.get(`${environment.API}/users/`,{
 
-    })
+    });
   }
 }

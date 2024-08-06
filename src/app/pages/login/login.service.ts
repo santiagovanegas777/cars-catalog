@@ -5,9 +5,6 @@ import { Observable, map } from 'rxjs';
 import { environment } from 'src/environments/environment.development';
 import { Location } from '@angular/common';
 
-
-
-
 @Injectable({
   providedIn: 'root'
 })
@@ -30,17 +27,11 @@ export class LoginService {
 
     })
    );
-
-
-
   }
-
-
-
 
   logout(){
     this.token = null;
     sessionStorage.removeItem('token-app');
-    this.router.navigate(['/login'])
+    this.router.navigate(['/login']);
   }
 }

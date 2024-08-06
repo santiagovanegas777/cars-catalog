@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-  public email: string = '';
-  public password: string = '';
+  public email = '';
+  public password = '';
 
 
 constructor(public loginService:LoginService){}
@@ -34,12 +34,7 @@ private login(obj:any){
   this.loginService.login(obj).subscribe(data => {
     console.log(data);
     console.log(this.loginService.token);
-   
-  })
+
+  });
 }
-
-
-
-
-
 }

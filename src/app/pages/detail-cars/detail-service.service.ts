@@ -12,7 +12,7 @@ export class DetailServiceService {
   constructor(private httpClient: HttpClient) { }
 
   getApiDetailCharacter(_id: _idInterface):Observable<any>{
-    return this.httpClient.get<any>(`${environment.API}/coches/id/` + _id)
+    return this.httpClient.get<any>(`${environment.API}/coches/id/` + _id);
 
   }
 }

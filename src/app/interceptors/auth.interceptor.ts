@@ -12,12 +12,9 @@ import { Observable } from 'rxjs';
   providedIn : 'root'
 })
 export class AuthInterceptor implements HttpInterceptor {
-
-  constructor() {}
-
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
 
-    const authReq = req.clone({headers: req.headers.set('Authorization', `Bearer ${sessionStorage.getItem('token-app')}`)})
+    const authReq = req.clone({headers: req.headers.set('Authorization', `Bearer ${sessionStorage.getItem('token-app')}`)});
 
     return next.handle(authReq);
   }
