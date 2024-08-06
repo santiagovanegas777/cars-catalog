@@ -1,7 +1,9 @@
+import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, map } from 'rxjs';
 import { environment } from 'src/environments/environment.development';
+import { Location } from '@angular/common';
 
 
 
@@ -12,7 +14,7 @@ import { environment } from 'src/environments/environment.development';
 export class LoginService {
   token: string | null = sessionStorage.getItem('token-app');
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient ,private router: Router,private location: Location) { }
 
 
   login(obj:any): Observable<any> {
@@ -20,13 +22,25 @@ export class LoginService {
     map((response: any) =>{
       this.token = response.token;
       sessionStorage.setItem('token-app', response.token);
+      this.location.back();
+      // this.router.navigate(['/..'])
+
+
       return response;
+
     })
    );
+
+
+
   }
+
+
+
 
   logout(){
     this.token = null;
     sessionStorage.removeItem('token-app');
+    this.router.navigate(['/login'])
   }
 }

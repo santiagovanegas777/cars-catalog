@@ -17,6 +17,8 @@ export class AuthGuard {
     if (!this.loginService.token) {
       return this.router.navigate(['/login']).then(() => false);
     }
+
+
     return true;
   }
 
