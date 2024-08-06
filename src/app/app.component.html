@@ -10,9 +10,16 @@
   <li><a routerLink="/cars">Cars</a></li>
 
 </ul>
-<button *ngIf="loginService.token" (click)="logout()">Logout</button>
+<!-- <button *ngIf="loginService.token" (click)="logout()">Logout</button> -->
+<button *ngIf="loginService.token" mat-flat-button (click)="logout()">Logout</button>
+<!-- <mat-slide-toggle *ngIf="loginService.token" mat-flat-button (click)="logout()">lllll</mat-slide-toggle> -->
+
 </div>
 
+
+
+  
+    <a mat-flat-button href="https://www.google.com/" target="_blank">Link</a>
 
 <router-outlet></router-outlet>
 
