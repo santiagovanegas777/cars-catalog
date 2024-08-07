@@ -1,11 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { SharedModule } from 'src/app/Shared/shared/shared.module';
 import { DetailCarsRoutingModule } from './detail-cars-routing.module';
+
 import { DetailCarsComponent } from './detail-cars.component';
-
-import { MatCardModule } from '@angular/material/card';
-
 
 @NgModule({
   declarations: [
@@ -14,7 +12,7 @@ import { MatCardModule } from '@angular/material/card';
   imports: [
     CommonModule,
     DetailCarsRoutingModule,
-    MatCardModule
+    SharedModule
   ]
 })
 export class DetailCarsModule { }

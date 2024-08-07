@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 
 import { CarsRoutingModule } from './cars-routing.module';
+
 import { CarsComponent } from './cars.component';
 
-import {MatCardModule} from '@angular/material/card';
+ import { MatCardModule } from '@angular/material/card';
+import { CommonModule } from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -13,7 +16,9 @@ import {MatCardModule} from '@angular/material/card';
   imports: [
     CommonModule,
     CarsRoutingModule,
-    MatCardModule
+     MatCardModule,
+
+
   ]
 })
 export class CarsModule { }
