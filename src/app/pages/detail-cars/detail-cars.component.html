@@ -1,4 +1,4 @@
-<p>detail-cars works!</p>
+<!-- <p>detail-cars works!</p>
 <div >
   <h3> Cars</h3>
 
@@ -15,4 +15,29 @@
 
   </div>
 
-</div>
+</div> -->
+
+<div>
+  <mat-card class="example-card" appearance="outlined">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{characterDetail.cocheName}}</mat-card-title>
+      <mat-card-subtitle>Modelo: {{characterDetail.cocheModel}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image  [src]="characterDetail.cocheImg" [alt]="characterDetail.cocheName">
+    <mat-card-content>
+   
+      <p>Potencia: {{characterDetail.cochePower}} cv</p>
+      <p>Precio: {{characterDetail.cochePrice}}€</p>
+      <p>Combustible: {{characterDetail.cochefuel}}</p>
+      <p>Color: {{characterDetail.cocheColor}}</p>
+
+
+
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button [routerLink]="['/detail-cars', characterDetail._id]">Details</button>
+
+    </mat-card-actions>
+  </mat-card>
+  </div>
