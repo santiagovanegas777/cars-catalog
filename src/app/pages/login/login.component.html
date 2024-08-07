@@ -5,9 +5,9 @@
 <input type="text" name="email" id="email" [(ngModel)]="email">
 <label for="password">password</label>
 <input type="text" name="password" id="password" [(ngModel)]="password">
-<button type="submit">Login</button>
+<button type="submit">Sign in</button>
 </form>
-
+<a [routerLink]="['/register']" >Register</a>
 <p *ngIf="this.loginService.token ">
   Estas logado!!!
 </p>
