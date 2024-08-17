@@ -52,6 +52,11 @@ const routes: Routes = [
     canActivate: [AuthGuard],
     loadChildren: () => import('./pages/deleteprofile/deleteprofile.module').then(m => m.DeleteprofileModule)
   },
+  {
+    path: `createdcars`,
+    // canActivate: [AuthGuard],
+    loadChildren: () => import('./pages/createdcars/createdcars.module').then(m => m.CreatedcarsModule)
+  },
 
   {path:'', redirectTo: '/home', pathMatch: 'full'},
   {path:'404', component: NotFoundComponentComponent},
