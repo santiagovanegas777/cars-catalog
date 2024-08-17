@@ -2,25 +2,23 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { SharedModule } from './Shared/shared/shared.module';
-
 
 import { AppComponent } from './app.component';
 import { NotFoundComponentComponent } from './pages/not-found-component/not-found-component.component';
 
 import { AuthInterceptor } from './interceptors/auth.interceptor';
 
-
 @NgModule({
   declarations: [
     AppComponent,
-    NotFoundComponentComponent
+    NotFoundComponentComponent,
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    SharedModule
 
   ],
   providers: [

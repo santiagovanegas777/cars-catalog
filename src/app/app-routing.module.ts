@@ -1,3 +1,5 @@
+import { UpdateprofileModule } from './pages/updateprofile/updateprofile.module';
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './services/auth-guard.guard';
@@ -35,6 +37,17 @@ const routes: Routes = [
     canActivate: [AuthGuard],
     loadChildren: () => import('./pages/cars/cars.module').then(m => m.CarsModule)
   },
+  {
+    path: `profile`,
+    canActivate: [AuthGuard],
+    loadChildren: () => import('./pages/profile/profile.module').then(m => m.ProfileModule)
+  },
+  {
+    path: `updateprofile`,
+    canActivate: [AuthGuard],
+    loadChildren: () => import('./pages/updateprofile/updateprofile.module').then(m => m.UpdateprofileModule)
+  },
+
   {path:'', redirectTo: '/home', pathMatch: 'full'},
   {path:'404', component: NotFoundComponentComponent},
   {path:'**', redirectTo: '/404', pathMatch: 'full'},

@@ -15,6 +15,7 @@ constructor(public loginService:LoginService){}
 
 ngOnit(){
   console.log(this.loginService.token);
+  console.log(this.loginService.userInfo);
 }
 
 public onSubmit() {
@@ -30,7 +31,7 @@ public onSubmit() {
 }
 
 
-private login(obj:any){
+public login(obj:any){
   this.loginService.login(obj).subscribe(data => {
     console.log(data);
     console.log(this.loginService.token);
