@@ -7,11 +7,15 @@ import { AppComponent } from './app.component';
 import { NotFoundComponentComponent } from './pages/not-found-component/not-found-component.component';
 
 import { AuthInterceptor } from './interceptors/auth.interceptor';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NotFoundComponentComponent,
+    HeaderComponent,
+    FooterComponent,
 
 
   ],

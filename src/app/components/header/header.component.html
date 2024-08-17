@@ -1,8 +1,6 @@
-<!-- <div style ="text-align: center"> -->
-  <h1>
-    Lazy Loading
-  </h1>
-<!-- <ul>
+<p>header works!</p>
+<nav>
+<ul>
   <li><a routerLink="/">HOME</a></li>
   <li><a routerLink="/list-cars">List Cars</a></li>
   <li><a *ngIf="!loginService.token" routerLink="/login">Login</a></li>
@@ -10,18 +8,8 @@
   <li><a routerLink="/cars">Cars</a></li>
   <li><a routerLink="/profile">Profile</a></li>
 
-</ul> -->
+</ul>
+</nav>
 <!-- <button *ngIf="loginService.token" (click)="logout()">Logout</button> -->
-<!-- <button *ngIf="loginService.token" mat-flat-button (click)="logout()">Logout</button> -->
+<button *ngIf="loginService.token" mat-flat-button (click)="logout()">Logout</button>
 <!-- <mat-slide-toggle *ngIf="loginService.token" mat-flat-button (click)="logout()">lllll</mat-slide-toggle> -->
-
-<!-- </div> -->
-
-
-
-
-<app-header></app-header>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
-
-
