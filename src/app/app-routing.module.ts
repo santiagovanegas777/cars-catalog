@@ -1,4 +1,4 @@
-import { UpdateprofileModule } from './pages/updateprofile/updateprofile.module';
+
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -46,6 +46,11 @@ const routes: Routes = [
     path: `updateprofile`,
     canActivate: [AuthGuard],
     loadChildren: () => import('./pages/updateprofile/updateprofile.module').then(m => m.UpdateprofileModule)
+  },
+  {
+    path: `removeprofile`,
+    canActivate: [AuthGuard],
+    loadChildren: () => import('./pages/deleteprofile/deleteprofile.module').then(m => m.DeleteprofileModule)
   },
 
   {path:'', redirectTo: '/home', pathMatch: 'full'},
