@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './services/auth-guard.guard';
 import { NotFoundComponentComponent } from './pages/not-found-component/not-found-component.component';
+import { AuthAdmin } from './services/admin.guard';
 
 const routes: Routes = [
   {
@@ -54,7 +55,7 @@ const routes: Routes = [
   },
   {
     path: `createdcars`,
-    // canActivate: [AuthGuard],
+    canActivate: [AuthAdmin],
     loadChildren: () => import('./pages/createdcars/createdcars.module').then(m => m.CreatedcarsModule)
   },
 
