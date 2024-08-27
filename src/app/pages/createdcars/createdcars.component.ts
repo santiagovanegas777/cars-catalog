@@ -30,15 +30,14 @@ export class CreatedcarsComponent {
 
     });
   }
+
   public handleSubmit(): void{
     console.log(this.formGroup.value);
 
-
     this.createdCarsService.createdCar(this.formGroup.value).subscribe(response=>{
       console.log(response);
-      this.router.navigate(['/cars']);
+      this.router.navigate(['/login']);
     });
 
   }
-
 }

@@ -9,8 +9,7 @@ import { NotFoundComponentComponent } from './pages/not-found-component/not-foun
 import { AuthInterceptor } from './interceptors/auth.interceptor';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { NavAdminComponent } from './components/nav-admin/nav-admin.component';
-import { NavClientComponent } from './components/nav-client/nav-client.component';
+
 
 @NgModule({
   declarations: [
@@ -18,8 +17,7 @@ import { NavClientComponent } from './components/nav-client/nav-client.component
     NotFoundComponentComponent,
     HeaderComponent,
     FooterComponent,
-    NavAdminComponent,
-    NavClientComponent,
+
 
 
   ],

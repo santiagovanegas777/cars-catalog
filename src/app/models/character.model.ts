@@ -24,3 +24,14 @@ export interface CharacterResponseInterface{
 export interface _idInterface {
   _id: string;
 }
+
+export interface CarsInterface {
+
+  cocheName: string;
+  cocheImg: string;
+  cocheModel: number;
+  cochePower: number;
+  cochePrice: number;
+  cochefuel: string;
+  cocheColor:string
+}

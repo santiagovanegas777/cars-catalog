@@ -1,5 +1,5 @@
 <p>header works!</p>
-<nav >
+<nav *ngIf="loginService.userRole.length === 4">
 <ul>
   <li><a routerLink="/">HOME</a></li>
   <li><a routerLink="/list-cars">List Cars</a></li>
@@ -7,9 +7,23 @@
   <li><a routerLink="/contact">Contact</a></li>
   <li><a routerLink="/cars">Cars</a></li>
   <li><a routerLink="/profile">Profile</a></li>
+  
 
 </ul>
 </nav>
+<nav *ngIf="loginService.userRole.length === 5">
+  <ul>
+    <li><a routerLink="/">HOME</a></li>
+    <li><a routerLink="/list-cars">List Cars</a></li>
+    <li><a *ngIf="!loginService.token" routerLink="/login">Login</a></li>
+    <li><a routerLink="/contact">Contact</a></li>
+    <li><a routerLink="/cars">Cars</a></li>
+    <li><a routerLink="/profile">Profile</a></li>
+    <li><a routerLink="/createdcars">createdcars</a></li>
+
+  </ul>
+  </nav>
 <!-- <button *ngIf="loginService.token" (click)="logout()">Logout</button> -->
 <button *ngIf="loginService.token" mat-flat-button (click)="logout()">Logout</button>
+
 <!-- <mat-slide-toggle *ngIf="loginService.token" mat-flat-button (click)="logout()">lllll</mat-slide-toggle> -->

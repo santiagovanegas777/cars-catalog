@@ -11,6 +11,8 @@ import { Location } from '@angular/common';
 export class LoginService {
   token: string | null = sessionStorage.getItem('token-app');
   userInfo: any;
+  userRole: string = "user";
+
 
   constructor(private httpClient: HttpClient ,private router: Router,private location: Location) { }
 
@@ -20,6 +22,7 @@ export class LoginService {
     map((response: any) =>{
       this.token = response.token;
       this.userInfo = response.userInfo;
+      this.userRole = response.userInfo.role;
       sessionStorage.setItem('token-app', response.token);
       // sessionStorage.setItem('user-app', response.userInfo);
 

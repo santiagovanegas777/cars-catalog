@@ -1,11 +1,12 @@
 <p>createdcars works!</p>
+
 <form (ngSubmit)="handleSubmit()" [formGroup]="formGroup">
   <label for="cocheName">Car Name</label>
   <input type="text" name="cocheName" id="cocheName" formControlName="cocheName">
   <label for="cochePrice">Car Price</label>
   <input type="number" name="cochePrice" id="cochePrice" formControlName="cochePrice">
   <label for="cocheImg">File</label>
-  <input type="text" name="cocheImg" id="cocheImg" formControlName="cocheImg">
+  <input type="file"  name="cocheImg" id="cocheImg" formControlName="cocheImg">
    <label for="cocheModel">Car Model</label>
   <input type="number" name="cocheModel" id="cocheModel" formControlName="cocheModel">
   <label for="cocheColor">Car Color</label>
@@ -15,5 +16,5 @@
   <label for="cochePower">Car Power</label>
   <input type="number" name="cochePower" id="cochePower" formControlName="cochePower">
 
-<button type="submit">Register</button>
+<button type="submit">ENVIAR</button>
 </form>
