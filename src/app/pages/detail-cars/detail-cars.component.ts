@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { DetailServiceService } from './detail-service.service';
 import { ActivatedRoute } from '@angular/router';
 import { CharacterInterface, _idInterface } from 'src/app/models/character.model';
+import { LoginService } from '../login/login.service';
+import { DeleteCarsService } from '../delete-cars/delete-cars.service';
 
 @Component({
   selector: 'app-detail-cars',
@@ -11,7 +13,9 @@ import { CharacterInterface, _idInterface } from 'src/app/models/character.model
 export class DetailCarsComponent {
   characterDetail!: CharacterInterface;
 
-  constructor(private ruta:ActivatedRoute, private detailService:DetailServiceService){}
+
+  constructor(private ruta:ActivatedRoute, private detailService:DetailServiceService, public loginService: LoginService, public deleteCar: DeleteCarsService
+  ){}
 
   ngOnInit(){
     this.ruta.params.subscribe(params=>{
@@ -27,5 +31,14 @@ export class DetailCarsComponent {
       console.log(this.characterDetail);
     });
 
+  }
+  public handleClic(){
+
+
+    this.deleteCar.removedCarApi(this.characterDetail._id).subscribe(response=>{
+      console.log(response);
+      console.log('delete');
+
+    });
   }
 }

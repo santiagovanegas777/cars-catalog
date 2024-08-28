@@ -1,3 +1,4 @@
+import { DeleteCarsModule } from './pages/delete-cars/delete-cars.module';
 
 
 import { NgModule } from '@angular/core';
@@ -57,6 +58,11 @@ const routes: Routes = [
     path: `createdcars`,
     canActivate: [AuthAdmin],
     loadChildren: () => import('./pages/createdcars/createdcars.module').then(m => m.CreatedcarsModule)
+  },
+  {
+    path: `deletecars/:id`,
+    canActivate: [AuthAdmin],
+    loadChildren: () => import('./pages/delete-cars/delete-cars.module').then(m =>m.DeleteCarsModule)
   },
 
   {path:'', redirectTo: '/home', pathMatch: 'full'},
