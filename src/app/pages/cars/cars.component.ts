@@ -33,7 +33,7 @@ if(action === 'prev' && this.currenPage !== 1){
   this.currenPage = this.currenPage - 1;
   this.getCars(this.currenPage);
 
-}else if(action === 'next' && this.currenPage !== 5){
+}else if(action === 'next' && this.currenPage !== 6){
   this.currenPage = this.currenPage + 1;
   this.getCars(this.currenPage);
 }

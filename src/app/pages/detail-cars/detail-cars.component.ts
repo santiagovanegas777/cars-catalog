@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { DetailServiceService } from './detail-service.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CharacterInterface, _idInterface } from 'src/app/models/character.model';
 import { LoginService } from '../login/login.service';
 import { DeleteCarsService } from '../delete-cars/delete-cars.service';
@@ -14,7 +14,7 @@ export class DetailCarsComponent {
   characterDetail!: CharacterInterface;
 
 
-  constructor(private ruta:ActivatedRoute, private detailService:DetailServiceService, public loginService: LoginService, public deleteCar: DeleteCarsService
+  constructor(private ruta:ActivatedRoute, private detailService:DetailServiceService, public loginService: LoginService, public deleteCar: DeleteCarsService, private router: Router
   ){}
 
   ngOnInit(){
@@ -36,8 +36,8 @@ export class DetailCarsComponent {
 
 
     this.deleteCar.removedCarApi(this.characterDetail._id).subscribe(response=>{
-      console.log(response);
-      console.log('delete');
+
+      this.router.navigate(['/cars']);
 
     });
   }
