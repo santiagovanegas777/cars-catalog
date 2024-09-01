@@ -2,7 +2,6 @@
 <nav *ngIf="loginService.userRole.length === 4">
 <ul>
   <li><a routerLink="/">HOME</a></li>
-  <li><a routerLink="/list-cars">List Cars</a></li>
   <li><a *ngIf="!loginService.token" routerLink="/login">Login</a></li>
   <li><a routerLink="/contact">Contact</a></li>
   <li><a routerLink="/cars">Cars</a></li>

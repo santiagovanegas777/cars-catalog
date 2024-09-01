@@ -22,11 +22,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/detail-cars/detail-cars.module').then(m => m.DetailCarsModule)
   },
   {
-    path: `list-cars`,
-    canActivate: [AuthGuard],
-    loadChildren: () => import('./pages/list-cars/list-cars.module').then(m => m.ListCarsModule)
-  },
-  {
     path: `login`,
     loadChildren: () => import('./pages/login/login.module').then(m => m.LoginModule)
   },
