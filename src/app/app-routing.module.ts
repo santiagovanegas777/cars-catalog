@@ -65,7 +65,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/delete-cars/delete-cars.module').then(m =>m.DeleteCarsModule)
   },
   {
-    path: `updatedcar`,
+    path: `updatecar/:id`,
     canActivate: [AuthAdmin],
     loadChildren: () => import('./pages/updated-car/updated-car.module').then(m =>m.UpdatedCarModule)
   },

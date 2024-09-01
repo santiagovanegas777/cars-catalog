@@ -36,6 +36,6 @@
 
     </mat-card-content>
     <button mat-button (click)="handleClic()" *ngIf="loginService.userRole.length === 5">Delete</button>
-    <a routerLink="/updatedcar"> <button mat-button   *ngIf="loginService.userRole.length === 5">Update</button></a>
+    <button mat-button [routerLink]="['/updatecar', characterDetail._id]" *ngIf="loginService.userRole.length === 5">Update</button>
   </mat-card>
   </div>

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { UpdatedCarRoutingModule } from './updated-car-routing.module';
 import { UpdatedCarComponent } from './updated-car.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,7 +12,9 @@ import { UpdatedCarComponent } from './updated-car.component';
   ],
   imports: [
     CommonModule,
-    UpdatedCarRoutingModule
+    UpdatedCarRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ]
 })
 export class UpdatedCarModule { }

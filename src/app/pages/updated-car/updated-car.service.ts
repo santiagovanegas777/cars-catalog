@@ -10,7 +10,7 @@ export class UpdatedCarService {
 
   constructor(private httpClient: HttpClient) { }
 
-  updateCar(_id: _idInterface, obj:any){
-    return this.httpClient.put(`${environment.API}/coches/update/` + _id,obj);
+  updateCar(_id: _idInterface, body:FormData){
+    return this.httpClient.put(`${environment.API}/coches/` + _id,body);
   }
 }
