@@ -6,7 +6,7 @@
   <li><a *ngIf="!loginService.token" routerLink="/login">Login</a></li>
   <li><a routerLink="/contact">Contact</a></li>
   <li><a routerLink="/cars">Cars</a></li>
-  <li><a routerLink="/profile">Profile</a></li>
+  <li *ngIf="loginService.token"><a routerLink="/profile">Profile</a></li>
 
 
 </ul>
