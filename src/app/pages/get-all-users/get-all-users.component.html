@@ -1,1 +1,16 @@
 <p>get-all-users works!</p>
+<div *ngIf="userList.length">
+  <h2>List Users</h2>
+  <div *ngFor="let user of userList">
+    <h3>Id:{{user._id}}</h3>
+    <p>Name:{{user.nombre}}</p>
+    <p>Address: {{user.direccion}}</p>
+    <p>LastName:{{user.apellidos}}</p>
+    <p>Email: {{user.email}}</p>
+    <p>phone: {{user.telefono}}</p>
+    <p>UserName: {{user.username}}</p>
+    <p>Role: {{user.role}}</p>
+
+  </div>
+
+</div>
