@@ -20,7 +20,7 @@ export class UpdatedCarComponent {
     this.ruta.params.subscribe(params=>{
 
       this.carId = (params['id']);
-      console.log(this.carId);
+      // console.log(this.carId);
     });
     this.initForm();
   }

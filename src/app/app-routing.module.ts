@@ -69,6 +69,11 @@ const routes: Routes = [
     canActivate: [AuthAdmin],
     loadChildren: () => import('./pages/updated-car/updated-car.module').then(m =>m.UpdatedCarModule)
   },
+  {
+    path: `get-all-users`,
+    canActivate: [AuthAdmin],
+    loadChildren: () => import('./pages/get-all-users/get-all-users.module').then(m =>m.GetAllUsersModule)
+  },
 
   {path:'', redirectTo: '/home', pathMatch: 'full'},
   {path:'404', component: NotFoundComponentComponent},
