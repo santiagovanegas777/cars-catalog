@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { RegisterRegisterService } from '../register-register.service';
+
 import { Router } from '@angular/router';
+import { RegisterService } from './register.service';
 
 @Component({
   selector: 'app-register',
@@ -11,7 +12,7 @@ import { Router } from '@angular/router';
 export class RegisterComponent {
   formGroup!: FormGroup;
 
-constructor(private formBuilder: FormBuilder, private registerService: RegisterRegisterService,private router: Router){
+constructor(private formBuilder: FormBuilder, private registerService:RegisterService ,private router: Router){
 
 }
 
