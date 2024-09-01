@@ -64,6 +64,11 @@ const routes: Routes = [
     canActivate: [AuthAdmin],
     loadChildren: () => import('./pages/delete-cars/delete-cars.module').then(m =>m.DeleteCarsModule)
   },
+  {
+    path: `updatedcar`,
+    canActivate: [AuthAdmin],
+    loadChildren: () => import('./pages/updated-car/updated-car.module').then(m =>m.UpdatedCarModule)
+  },
 
   {path:'', redirectTo: '/home', pathMatch: 'full'},
   {path:'404', component: NotFoundComponentComponent},

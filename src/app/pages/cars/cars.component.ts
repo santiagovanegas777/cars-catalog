@@ -26,7 +26,7 @@ export class CarsComponent {
     this.carsService.getApiCars(page).subscribe((data:CharacterResponseInterface)=>{
       console.log(data.coches);
       this.characterList = this.characterList= data.coches;
-      
+
     });
   }
 
@@ -35,13 +35,14 @@ if(action === 'prev' && this.currenPage !== 1){
   this.currenPage = this.currenPage - 1;
   this.getCars(this.currenPage);
 
-}else if (action === 'next'  && this.characterList.length ===3){
+}
+else if (action === 'next'  && this.characterList.length ===3){
   this.currenPage = this.currenPage + 1;
   this.getCars(this.currenPage);
 
 }
-// else if(action === 'next'&&   this.characterList[0]._id,this.characterList[1]._id,this.characterList[2]._id == this.characterList[0]._id,this.characterList[1]._id,this.characterList[2]._id){
-// this.currenPage = this.currenPage + 0;
+// else if(action === 'next'&&   this.characterList[0]._id,this.characterList[1]._id,this.characterList[2]._id === this.characterList[0]._id,this.characterList[1]._id,this.characterList[2]._id){
+// this.currenPage = this.currenPage - 1;
 // this.getCars(this.currenPage);
 // }
 
