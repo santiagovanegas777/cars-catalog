@@ -72,7 +72,7 @@ const routes: Routes = [
   {
     path:`filter-car/:cocheName`,
     canActivate:[AuthGuard],
-    loadChildren: ()=> import('./pages/filter-car/filter-car.module').then(m =>m.FilterCarModule)
+    loadChildren: () => import('./pages/filter-car/filter-car.module').then(m =>m.FilterCarModule)
   },
 
   {path:'', redirectTo: '/home', pathMatch: 'full'},

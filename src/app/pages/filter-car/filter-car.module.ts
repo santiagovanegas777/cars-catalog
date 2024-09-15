@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { FilterCarRoutingModule } from './filter-car-routing.module';
 import { FilterCarComponent } from './filter-car.component';
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { FilterCarComponent } from './filter-car.component';
   ],
   imports: [
     CommonModule,
-    FilterCarRoutingModule
+    FilterCarRoutingModule,
+    MatCardModule,
   ]
 })
 export class FilterCarModule { }
