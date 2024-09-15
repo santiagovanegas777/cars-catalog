@@ -1,7 +1,8 @@
-<p>get-all-users works!</p>
+<input type="text" class="form-control" name="filterUser" placeholder="Search User" [(ngModel)]="filterUser"/>
+
 <div *ngIf="userList.length">
   <h2>List Users</h2>
-  <div *ngFor="let user of userList">
+  <div *ngFor="let user of userList | filteruser:filterUser">
     <h3>Id:{{user._id}}</h3>
     <p>Name:{{user.nombre}}</p>
     <p>Address: {{user.direccion}}</p>

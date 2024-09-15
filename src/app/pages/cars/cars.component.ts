@@ -51,9 +51,5 @@ else if (action === 'next'  && this.characterList.length ===3){
 
 }
 
-// public handleKeyUp(value: string): void {
-//   this.inputText = value;
-//   console.log(this.inputText);
-// }
 
 }

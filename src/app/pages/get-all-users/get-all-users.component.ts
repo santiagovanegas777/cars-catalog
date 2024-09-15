@@ -8,6 +8,7 @@ import { GetAllUsersService } from './get-all-users.service';
 })
 export class GetAllUsersComponent {
   userList: any[]= [];
+  filterUser = "";
 
   constructor(private getAlluserService: GetAllUsersService){}
 
