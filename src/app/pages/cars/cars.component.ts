@@ -15,11 +15,14 @@ export class CarsComponent {
   characterList: CharacterInterface[] = [];
   currenPage = 1;
   characterDetail: any=[];
+  filterCharacter = "";
+  // public inputText: string = '';
 
   constructor(private carsService: CarsserviceService , public detailService: DetailServiceService, public loginService: LoginService){}
 
   ngOnInit() {
     this.getCars(this.currenPage);
+
   }
 
   private getCars(page:number){
@@ -48,14 +51,9 @@ else if (action === 'next'  && this.characterList.length ===3){
 
 }
 
-
-// public getDetail(_id: string){
-//   this.detailService.getApiDetailCharacter(_id).subscribe(data =>{
-//     console.log(data)
-//     this.characterDetail = this.characterDetail = data;
-//   });
-
+// public handleKeyUp(value: string): void {
+//   this.inputText = value;
+//   console.log(this.inputText);
 // }
-
 
 }

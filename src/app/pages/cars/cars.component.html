@@ -15,8 +15,13 @@
   </div>
 
 </div> -->
+<div>
+  <!-- <input  #fatherInput (keyup)="handleKeyUp(fatherInput.value)" class="filter"> -->
+<input type="text" class="form-control" name="filterCharacter" placeholder="Search" [(ngModel)]="filterCharacter"/>
+
+</div>
 <div *ngIf="characterList.length">
-<mat-card *ngFor="let character of characterList"class="example-card" appearance="outlined">
+<mat-card *ngFor="let character of characterList | filterr:filterCharacter" class="example-card" appearance="outlined">
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>
     <mat-card-title>{{character.cocheName}}</mat-card-title>
