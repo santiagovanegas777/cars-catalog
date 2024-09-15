@@ -15,7 +15,8 @@ export class CarsComponent {
   characterList: CharacterInterface[] = [];
   currenPage = 1;
   characterDetail: any=[];
-  filterCharacter = "";
+  public inputText = '';
+
   // public inputText: string = '';
 
   constructor(private carsService: CarsserviceService , public detailService: DetailServiceService, public loginService: LoginService){}
@@ -51,5 +52,10 @@ else if (action === 'next'  && this.characterList.length ===3){
 
 }
 
+
+public handleKeyUp(value: string): void {
+  this.inputText = value;
+  console.log(this.inputText);
+}
 
 }

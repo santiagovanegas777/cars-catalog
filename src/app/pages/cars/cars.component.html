@@ -1,27 +1,10 @@
-<!-- <div *ngIf="characterList.length">
-  <h3> Cars</h3>
-
-  <div *ngFor="let character of characterList">
-    <h4>{{character._id}}--{{character.cocheName}}</h4>
-    <p>Modelo: {{character.cocheModel}}</p>
-    <p>Potencia: {{character.cochePower}} cv</p>
-    <p>Precio: {{character.cochePrice}}€</p>
-    <p>Combustible: {{character.cochefuel}}</p>
-    <p>Color: {{character.cocheColor}}</p>
-    <img [src]="character.cocheImg" [alt]="character.cocheName" [routerLink]="['/detail-cars', character._id]" >
-
-
-
-  </div>
-
-</div> -->
 <div>
-  <!-- <input  #fatherInput (keyup)="handleKeyUp(fatherInput.value)" class="filter"> -->
-<input type="text" class="form-control" name="filterCharacter" placeholder="Search" [(ngModel)]="filterCharacter"/>
-
+  <input #fatherInput (keyup)="handleKeyUp(fatherInput.value)" class="filter"  >
+  <button [routerLink]="['/filter-car', fatherInput.value.toUpperCase()]">Search</button>
 </div>
+
 <div *ngIf="characterList.length">
-<mat-card *ngFor="let character of characterList | filterr:filterCharacter" class="example-card" appearance="outlined">
+<mat-card *ngFor="let character of characterList " class="example-card" appearance="outlined">
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>
     <mat-card-title>{{character.cocheName}}</mat-card-title>
