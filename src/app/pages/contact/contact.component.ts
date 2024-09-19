@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 
 @Component({
@@ -7,6 +8,10 @@ import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
+
+  constructor(private router: Router){
+
+  }
   public sendEmail(e: Event) {
     e.preventDefault();
 
@@ -17,9 +22,11 @@ export class ContactComponent {
       .then(
         () => {
           console.log('SUCCESS!');
+          this.router.navigate(['/home']);
         },
         (error) => {
           console.log('FAILED...', (error as EmailJSResponseStatus).text);
+          this.router.navigate(['/home']);
         },
       );
   }
