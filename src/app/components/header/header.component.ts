@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { LoginService } from 'src/app/pages/login/login.service';
 
 
@@ -10,8 +11,9 @@ import { LoginService } from 'src/app/pages/login/login.service';
 })
 export class HeaderComponent {
  userRole :any ={};
+ public inputText = '';
 
-  constructor(public loginService: LoginService){}
+  constructor(public loginService: LoginService, private router: Router){}
 // ngOnInit(){
 //  this.getUserRole();
 
@@ -19,6 +21,12 @@ export class HeaderComponent {
 // }
   logout(){
     this.loginService.logout();
+    this.router.navigate(['/login']);
+  }
+
+  public handleKeyUp(value: string): void {
+    this.inputText = value;
+    console.log(this.inputText);
   }
 
 
