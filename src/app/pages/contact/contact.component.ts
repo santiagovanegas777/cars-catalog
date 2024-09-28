@@ -1,15 +1,20 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
+
 import { Router } from '@angular/router';
 import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
+
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls: ['./contact.component.scss'],
+
 })
 export class ContactComponent {
 
-  constructor(private router: Router){
+
+  constructor(private router: Router,
+  ){
 
   }
   public sendEmail(e: Event) {
@@ -29,6 +34,9 @@ export class ContactComponent {
           this.router.navigate(['/home']);
         },
       );
+  }
+  handleClick(){
+    console.log('click');
   }
 
 
