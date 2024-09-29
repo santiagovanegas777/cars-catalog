@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"register.component.css"}
+{"version":3,"sources":["register.component.scss","register.component.css"],"names":[],"mappings":"AAAA;EACE,gBAAA;EACA,mBAAA;EACA,sHAAA;EACA,kCAAA;EACA,sBAAA;ACCF;;ADEA;EACE,aAAA;ACCF","file":"register.component.css"}
