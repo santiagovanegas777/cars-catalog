@@ -5,6 +5,7 @@
 .example-card {
   max-width: 100%;
   margin-bottom: 9px;
+  background-color: black;
 }
 
 .example-header-image {
@@ -19,4 +20,16 @@
   width: 100%;
   margin-top: 55px;
   margin-bottom: 8px;
+}
+
+.pCard {
+  color: white;
+}
+
+.card-title {
+  color: blueviolet;
+}
+
+.pagination {
+  margin: 9px 34px 19px 27px;
 }/*# sourceMappingURL=cars.component.css.map */

@@ -12,28 +12,39 @@
 <mat-card *ngFor="let character of characterList " class="example-card" appearance="outlined">
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>{{character.cocheName}}</mat-card-title>
+    <mat-card-title class="card-title">{{character.cocheName}}</mat-card-title>
     <mat-card-subtitle>Modelo: {{character.cocheModel}}</mat-card-subtitle>
   </mat-card-header>
   <img mat-card-image  [src]="character.cocheImg" [alt]="character.cocheName">
   <mat-card-content>
 
 
-    <p>Combustible: {{character.cochefuel}}</p>
+    <p class="pCard">Combustible: {{character.cochefuel}}</p>
 
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button [routerLink]="['/detail-cars', character._id]">Details</button>
-
+    <!-- <button mat-button [routerLink]="['/detail-cars', character._id]">Details</button> -->
+    <button type="button" class="btn btn-outline-info" [routerLink]="['/detail-cars', character._id]">Details</button>
   </mat-card-actions>
 
 </mat-card>
 
 </div>
+<nav  class="pagination" aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <button class="page-link" (click)="handlePaginatior('prev')">Previous</button>
+    </li>
+    <li class="page-item"><p class="page-link"> {{currenPage}}</p></li>
 
+    <li class="page-item">
+      <button class="page-link" (click)="handlePaginatior('next')">Next</button>
+    </li>
+  </ul>
+</nav>
 
-<button (click)="handlePaginatior('prev')">prev</button>
+<!-- <button (click)="handlePaginatior('prev')">prev</button>
 <p>Page: {{currenPage}}</p>
 
-<button (click)="handlePaginatior('next')" >next</button>
+<button (click)="handlePaginatior('next')" >next</button> -->
 </section>
