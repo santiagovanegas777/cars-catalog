@@ -1,6 +1,27 @@
-<p>hola soy contact y molo mucho </p>
+<form class="contact" (submit)="sendEmail($event)">
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label" for="user_name">Name</label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" name="user_name">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label" for="user_email">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"  name="user_email">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label"  for="message">Message</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  name="message"></textarea>
+</div>
+<div class="d-grid gap-2">
+  <button class="btn btn-info" type="submit">Submit Form</button>
+</div>
+</form>
 
-<form class="contact-form" (submit)="sendEmail($event)">
+
+
+
+
+
+<!-- <form class="contact" (submit)="sendEmail($event)">
   <label for="user_name">Name</label>
   <input type="text" name="user_name">
   <label for="user_email">Email</label>
@@ -8,7 +29,7 @@
   <label for="message">Message</label>
   <textarea name="message"></textarea>
   <input type="submit" value="Send">
-</form>
+</form> -->
 
 
 
