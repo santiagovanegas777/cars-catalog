@@ -1,6 +1,6 @@
 <div>
-  <input #fatherInput (keyup)="handleKeyUp(fatherInput.value)" class="filter"  >
-  <button [routerLink]="['/filter-car', fatherInput.value.toUpperCase()]">Search</button>
+  <input class="filer" #fatherInput (keyup)="handleKeyUp(fatherInput.value)" class="filter"  >
+  <button class="filter-search" [routerLink]="['/filter-car', fatherInput.value.toUpperCase()]">Search</button>
 </div>
 
 <div *ngIf="characterList.length">
