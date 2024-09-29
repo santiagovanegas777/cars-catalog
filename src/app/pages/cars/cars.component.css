@@ -1,5 +1,10 @@
+.container {
+  background-color: pink;
+}
+
 .example-card {
-  max-width: 400px;
+  max-width: 100%;
+  margin-bottom: 9px;
 }
 
 .example-header-image {
@@ -8,10 +13,10 @@
 }
 
 .filter {
-  width: 400px;
-  margin-top: 83px;
+  padding: 20px;
 }
-
-.filter-search {
-  width: 300px;
+.filter-input {
+  width: 100%;
+  margin-top: 55px;
+  margin-bottom: 8px;
 }/*# sourceMappingURL=cars.component.css.map */
