@@ -1,13 +1,17 @@
 
 
 <form (ngSubmit)="onSubmit()" #form="ngForm" class="login">
-  <label for="email">Email</label>
-<input type="text" name="email" id="email" [(ngModel)]="email">
-<label for="password">password</label>
-<input type="text" name="password" id="password" [(ngModel)]="password">
-<button type="submit">Sign in</button>
+  <div  class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"  name="email" id="email" [(ngModel)]="email">
+  </div>
+  <label for="inputPassword5" class="form-label">Password</label>
+  <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" name="password" id="password" [(ngModel)]="password">
+
+  <div  class="d-grid gap-2">
+    <button class="btn btn-outline-dark" type="button">Login</button>
+    <button class="btn btn-outline-info" type="button"><a  [routerLink]="['/register']">Register</a></button>
+  </div>
 </form>
-<a [routerLink]="['/register']" >Register</a>
-<p *ngIf="this.loginService.token ">
-  Estas logado!!!
-</p>
+
+
