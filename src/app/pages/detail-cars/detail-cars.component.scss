@@ -1,8 +1,20 @@
-.example-card {
-  max-width: 400px;
+.container{
+  background-color: pink;
+  padding: 23px;
+  &_card{
+    max-width: 100%;
+    margin-top: 46px;
+    margin-bottom: 18px;
+    &-img{
+      background-image: url('https://res.cloudinary.com/dz3qrv6vz/image/upload/v1723031051/coche/OIP_clwghk.jpg');
+      background-size: cover;
+    }
+    &-title{
+      color: blueviolet;
+    }
+    &-p{
+      color: white;
+    }
+  }
 }
 
-.example-header-image {
-  background-image: url('https://res.cloudinary.com/dz3qrv6vz/image/upload/v1723031051/coche/OIP_clwghk.jpg');
-  background-size: cover;
-}

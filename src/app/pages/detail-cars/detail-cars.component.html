@@ -1,36 +1,19 @@
-<!-- <p>detail-cars works!</p>
-<div >
-  <h3> Cars</h3>
-
-  <div >
-    <h4>{{characterDetail._id}}--{{characterDetail.cocheName}}</h4>
-    <p>Modelo: {{characterDetail.cocheModel}}</p>
-    <p>Potencia: {{characterDetail.cochePower}} cv</p>
-    <p>Precio: {{characterDetail.cochePrice}}€</p>
-    <p>Combustible: {{characterDetail.cochefuel}}</p>
-    <p>Color: {{characterDetail.cocheColor}}</p>
-    <img [src]="characterDetail.cocheImg" [alt]="characterDetail.cocheName"  >
 
 
-
-  </div>
-
-</div> -->
-
-<div>
-  <mat-card class="example-card" appearance="outlined">
+<section class="container">
+  <mat-card class="container_card example-card" appearance="outlined">
     <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>{{characterDetail.cocheName}}</mat-card-title>
+      <div mat-card-avatar class="container_card-img example-header-image"></div>
+      <mat-card-title class="container_card-title">{{characterDetail.cocheName}}</mat-card-title>
       <mat-card-subtitle>Modelo: {{characterDetail.cocheModel}}</mat-card-subtitle>
     </mat-card-header>
     <img mat-card-image  [src]="characterDetail.cocheImg" [alt]="characterDetail.cocheName">
     <mat-card-content>
 
-      <p>Potencia: {{characterDetail.cochePower}} cv</p>
-      <p>Precio: {{characterDetail.cochePrice}}€</p>
-      <p>Combustible: {{characterDetail.cochefuel}}</p>
-      <p>Color: {{characterDetail.cocheColor}}</p>
+      <p class="container_card-p">Potencia: {{characterDetail.cochePower}} cv</p>
+      <p class="container_card-p">Precio: {{characterDetail.cochePrice}}€</p>
+      <p class="container_card-p">Combustible: {{characterDetail.cochefuel}}</p>
+      <p class="container_card-p">Color: {{characterDetail.cocheColor}}</p>
 
 
 
@@ -38,4 +21,4 @@
     <button mat-button (click)="handleClic()" *ngIf="loginService.userRole.length === 5">Delete</button>
     <button mat-button [routerLink]="['/updatecar', characterDetail._id]" *ngIf="loginService.userRole.length === 5">Update</button>
   </mat-card>
-  </div>
+  </section>
