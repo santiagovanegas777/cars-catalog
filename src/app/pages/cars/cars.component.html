@@ -1,6 +1,6 @@
 <section class="container">
-  <div class="filter">
-  <input class="form-control" type="text" placeholder="Search car here..." aria-label="readonly input example"  #fatherInput (keyup)="handleKeyUp(fatherInput.value)" class="filter-input" name="filer-car"  >
+  <div class="container_filter">
+  <input class="form-control container_filter-input" type="text" placeholder="Search car here..." aria-label="readonly input example"  #fatherInput (keyup)="handleKeyUp(fatherInput.value)" name="filer-car"  >
   <div class="d-grid gap-2">
     <button class="btn btn-info" type="button" [routerLink]="['/filter-car', fatherInput.value.toUpperCase()]">Search</button>
     </div>
@@ -9,17 +9,17 @@
 </div>
 
 <div *ngIf="characterList.length">
-<mat-card *ngFor="let character of characterList " class="example-card" appearance="outlined">
+<mat-card *ngFor="let character of characterList " class="example-card container_card" appearance="outlined">
   <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title class="card-title">{{character.cocheName}}</mat-card-title>
+    <div mat-card-avatar class="example-header-image container_card-image"></div>
+    <mat-card-title class="container_card-title">{{character.cocheName}}</mat-card-title>
     <mat-card-subtitle>Modelo: {{character.cocheModel}}</mat-card-subtitle>
   </mat-card-header>
   <img mat-card-image  [src]="character.cocheImg" [alt]="character.cocheName">
   <mat-card-content>
 
 
-    <p class="pCard">Combustible: {{character.cochefuel}}</p>
+    <p class="container_card-p">Combustible: {{character.cochefuel}}</p>
 
   </mat-card-content>
   <mat-card-actions>
@@ -30,7 +30,7 @@
 </mat-card>
 
 </div>
-<nav  class="pagination" aria-label="Page navigation example">
+<nav  class="container_pagination" aria-label="Page navigation example">
   <ul class="pagination justify-content-center">
     <li class="page-item">
       <button class="page-link" (click)="handlePaginatior('prev')">Previous</button>

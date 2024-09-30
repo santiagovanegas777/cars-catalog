@@ -1,39 +1,37 @@
 .container{
-  background-color: pink
-}
+  background-color: pink;
 
-.example-card {
-  max-width: 100%;
-  margin-bottom: 9px;
-  background-color: black;
-}
+  &_filter{
+    padding: 20px;
 
-.example-header-image {
-  background-image: url('https://res.cloudinary.com/dz3qrv6vz/image/upload/v1723031051/coche/OIP_clwghk.jpg');
-  background-size: cover;
-}
-
-
-
-.filter{
-  padding: 20px;
-
-  &-input{
-    width: 100%;
-    margin-top: 55px;
-    margin-bottom: 8px;
+    &-input{
+      width: 100%;
+      margin-top: 55px;
+      margin-bottom: 8px;
+    }
   }
 
+  &_card{
+    max-width: 100%;
+    margin-bottom: 9px;
+    background-color: black;
+
+    &-image{
+      background-image: url('https://res.cloudinary.com/dz3qrv6vz/image/upload/v1723031051/coche/OIP_clwghk.jpg');
+      background-size: cover;
+    }
+
+    &-title{
+      color: blueviolet;
+    }
+
+    &-p{
+      color: white;
+    }
+  }
+
+  &_pagination{
+    margin:9px 34px 19px 27px;
+  }
 }
 
-.pCard{
-  color: white;
-}
-
-.card-title{
-  color: blueviolet;
-}
-
-.pagination{
-  margin:9px 34px 19px 27px;
-}

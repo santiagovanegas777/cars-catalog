@@ -1,25 +1,22 @@
 .container {
   background-color: pink;
 }
-
-.example-card {
+.container_filter {
+  padding: 20px;
+}
+.container_filter-input {
+  width: 100%;
+  margin-top: 55px;
+  margin-bottom: 8px;
+}
+.container_card {
   max-width: 100%;
   margin-bottom: 9px;
   background-color: black;
 }
-
-.example-header-image {
+.container_card-image {
   background-image: url("https://res.cloudinary.com/dz3qrv6vz/image/upload/v1723031051/coche/OIP_clwghk.jpg");
   background-size: cover;
-}
-
-.filter {
-  padding: 20px;
-}
-.filter-input {
-  width: 100%;
-  margin-top: 55px;
-  margin-bottom: 8px;
 }
 
 .pCard {
