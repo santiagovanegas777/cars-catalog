@@ -1,4 +1,4 @@
-
+<!--
 <div>
   <mat-card class="example-card" appearance="outlined">
     <mat-card-header>
@@ -22,7 +22,26 @@
 
 
 
-    </mat-card-content>
+    <!-- </mat-card-content>
 
   </mat-card>
+  </div> !-->
+  <div class="card text-center container">
+    <div class="card-header">
+      UserName: {{userDetail.username}}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">ID:{{userDetail._id}}</h5>
+      <p class="card-text">Name: {{userDetail.nombre}}</p>
+      <p class="card-text">LastName: {{userDetail.apellidos}}</p>
+      <p class="card-text">Email: {{userDetail.email}}</p>
+      <p class="card-text">Address: {{userDetail.direccion}}</p>
+      <p class="card-text">Phone: {{userDetail.telefono}}</p>
+
+      <a routerLink="/updateprofile" class="btn btn-primary">Edit Profile</a>
+      <a routerLink="/removeprofile" class="btn btn-primary">Delete Profile</a>
+    </div>
+    <div class="card-footer text-body-secondary">
+      <p class="card-text">Role: {{userDetail.role}}</p>
+    </div>
   </div>
