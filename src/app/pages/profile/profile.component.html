@@ -31,7 +31,7 @@
     <div class="card-header container_card-header">
       UserName: {{userDetail.username}}
     </div>
-    <div class="card-body container_body">
+    <div class="card-body">
       <h5 class="card-title">ID:{{userDetail._id}}</h5>
       <p class="card-text">Name: {{userDetail.nombre}}</p>
       <p class="card-text">LastName: {{userDetail.apellidos}}</p>
@@ -39,8 +39,8 @@
       <p class="card-text">Address: {{userDetail.direccion}}</p>
       <p class="card-text">Phone: {{userDetail.telefono}}</p>
 
-      <a routerLink="/updateprofile" class="btn btn-primary">Edit Profile</a>
-      <a routerLink="/removeprofile" class="btn btn-primary">Delete Profile</a>
+      <a routerLink="/updateprofile" class="btn btn-secondary">Edit Profile</a>
+      <a routerLink="/removeprofile" class="btn btn-secondary">Delete Profile</a>
     </div>
     <div class="card-footer text-body-secondary container_card-role">
       <p class="card-text">Role: {{userDetail.role}}</p>

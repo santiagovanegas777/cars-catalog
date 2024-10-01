@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"updateprofile.component.css"}
+{"version":3,"sources":["updateprofile.component.scss","updateprofile.component.css"],"names":[],"mappings":"AAAA;EACE,gBAAA;EACA,mBAAA;EACA,sHAAA;EACA,kCAAA;EACA,sBAAA;ACCF;;ADEA;EACE,aAAA;ACCF","file":"updateprofile.component.css"}
