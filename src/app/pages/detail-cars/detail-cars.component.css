@@ -16,4 +16,25 @@
 }
 .container_card-p {
   color: white;
+}
+.container_section {
+  background-color: #9db3ac;
+}
+.container_section-title {
+  color: blue;
+  margin-top: 5px;
+  margin-left: 203px;
+}
+.container_section-button {
+  margin-left: 36%;
+}
+.container_section-button-icondelete {
+  color: red;
+}
+.container_section-button-iconupdate {
+  color: yellow;
+}
+
+.btnupdate {
+  margin-top: 57px;
 }/*# sourceMappingURL=detail-cars.component.css.map */

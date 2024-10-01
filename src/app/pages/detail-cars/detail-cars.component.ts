@@ -41,4 +41,8 @@ export class DetailCarsComponent {
 
     });
   }
+
+  public handleClick(){
+    console.log("santi");
+  }
 }
