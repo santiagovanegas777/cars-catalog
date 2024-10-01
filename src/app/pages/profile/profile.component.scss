@@ -1,5 +1,25 @@
 .container{
-  width: 100%;
-  margin-top: 26%;
-  margin-bottom:26%
+  background-color: pink;
+  height: 100%;
+  padding: 21px;
+
+
+  &_card{
+    width: 100%;
+    margin-top: 19%;
+    margin-bottom:26%;
+    background-color:black;
+    color: blueviolet;
+    &-header{
+      background-color: gray;
+      color: black;
+    }
+    &-role{
+      background-color:gray;
+      color: black;
+    }
+
+
+  }
+
 }
