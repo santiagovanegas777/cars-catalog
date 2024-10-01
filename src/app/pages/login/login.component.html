@@ -1,6 +1,6 @@
 
-
-<form (ngSubmit)="onSubmit()" #form="ngForm" class="login">
+<section class="container">
+<form (ngSubmit)="onSubmit()" #form="ngForm" class="container_form">
   <div  class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">Email address</label>
     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"  name="email" id="email" [(ngModel)]="email">
@@ -13,5 +13,5 @@
     <button class="btn btn-outline-info" type="button"><a  [routerLink]="['/register']">Register</a></button>
   </div>
 </form>
-
+</section>
 
