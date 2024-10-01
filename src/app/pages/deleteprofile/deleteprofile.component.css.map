@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"deleteprofile.component.css"}
+{"version":3,"sources":["deleteprofile.component.scss","deleteprofile.component.css"],"names":[],"mappings":"AAAA;EACE,gBAAA;EACA,mBAAA;EACA,sHAAA;EACA,kCAAA;EACA,sBAAA;ACCF;;ADEA;EACE,aAAA;ACCF","file":"deleteprofile.component.css"}
