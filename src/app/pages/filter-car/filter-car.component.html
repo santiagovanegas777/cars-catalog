@@ -1,4 +1,53 @@
-<div *ngIf="filterCharacter.length">
+
+<section class="container" *ngIf="filterCharacter.length" >
+  <mat-card class="container_card example-card" appearance="outlined" *ngFor="let character of filterCharacter ">
+    <mat-card-header>
+      <div mat-card-avatar class="container_card-img example-header-image"></div>
+      <mat-card-title class="container_card-title">{{character.cocheName}}</mat-card-title>
+      <mat-card-subtitle>Modelo: {{character.cocheModel}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image  [src]="character.cocheImg" [alt]="character.cocheName">
+    <mat-card-content>
+
+      <p class="container_card-p">Potencia: {{character.cochePower}} cv</p>
+      <p class="container_card-p">Precio: {{character.cochePrice}}€</p>
+      <p class="container_card-p">Combustible: {{character.cochefuel}}</p>
+      <p class="container_card-p">Color: {{character.cocheColor}}</p>
+
+
+
+    </mat-card-content>
+
+    <section class="container_section" *ngIf="loginService.userRole.length === 5">
+      <div class="example-label container_section-title">Options</div>
+      <div class="example-button-row">
+        <div class="example-flex-container">
+          <div class="example-button-container container_section-button">
+            <button mat-fab aria-label="Example icon button with a delete icon"  (click)="handleClic()" *ngIf="loginService.userRole.length === 5">
+              <mat-icon class="container_section-button-icondelete">delete</mat-icon>
+            </button>
+          </div>
+          <div class="example-button-container container_section-button">
+            <button mat-fab aria-label="Example icon button with a heart icon" [routerLink]="['/updatecar', character._id]" *ngIf="loginService.userRole.length === 5">
+              <mat-icon class="container_section-button-iconupdate">update</mat-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </mat-card>
+
+  </section>
+
+
+
+
+
+
+
+
+<!-- <div *ngIf="filterCharacter.length">
   <mat-card *ngFor="let character of filterCharacter "class="example-card" appearance="outlined">
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
@@ -19,4 +68,4 @@
     <button mat-button (click)="handleClic()" *ngIf="loginService.userRole.length === 5">Delete</button>
     <button mat-button [routerLink]="['/updatecar', filterCharacter._id]" *ngIf="loginService.userRole.length === 5">Update</button>
   </mat-card>
-  </div>
+  </div> -->

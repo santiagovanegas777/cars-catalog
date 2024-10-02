@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FilterCarRoutingModule } from './filter-car-routing.module';
 import { FilterCarComponent } from './filter-car.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { MatCardModule } from '@angular/material/card';
     CommonModule,
     FilterCarRoutingModule,
     MatCardModule,
+    MatIconModule,
   ]
 })
 export class FilterCarModule { }

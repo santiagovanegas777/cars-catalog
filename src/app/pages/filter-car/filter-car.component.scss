@@ -1,0 +1,45 @@
+.container {
+  background-color: pink;
+  padding: 23px;
+  &_card {
+    max-width: 100%;
+    margin-top: 46px;
+    margin-bottom: 18px;
+    &-img {
+      background-image: url("https://res.cloudinary.com/dz3qrv6vz/image/upload/v1723031051/coche/OIP_clwghk.jpg");
+      background-size: cover;
+    }
+    &-title {
+      color: blueviolet;
+    }
+    &-p {
+      color: white;
+    }
+  }
+
+  &_section {
+    background-color:#9db3ac;
+
+    &-title {
+      color: blue;
+      margin-top: 5px;
+      margin-left: 203px;
+    }
+
+    &-button {
+      margin-left: 36%;
+
+      &-icondelete {
+        color: red;
+      }
+      &-iconupdate {
+        color: yellow;
+      }
+    }
+  }
+}
+
+.btnupdate{
+  margin-top: 57px;
+}
+
