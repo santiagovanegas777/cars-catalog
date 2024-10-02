@@ -1,0 +1,25 @@
+.container{
+  background-color: pink;
+  height: auto;
+  margin-top: 36px;
+  padding: 39px;
+
+  &_card{
+     background-color: gray;
+     padding: 9px;
+     height: auto;
+
+     &-body{
+      background-color:lightblue;
+      color: blue;
+      padding: 3px;
+      margin-bottom: 19px;
+     }
+  }
+
+  &_filter{
+    margin-bottom: 49px;
+  }
+}
+
+

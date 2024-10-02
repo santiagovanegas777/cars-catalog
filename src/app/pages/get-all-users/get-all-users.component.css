@@ -1,1 +1,20 @@
-/*# sourceMappingURL=get-all-users.component.css.map */
+.container {
+  background-color: pink;
+  height: auto;
+  margin-top: 36px;
+  padding: 39px;
+}
+.container_card {
+  background-color: gray;
+  padding: 9px;
+  height: auto;
+}
+.container_card-body {
+  background-color: lightblue;
+  color: blue;
+  padding: 3px;
+  margin-bottom: 19px;
+}
+.container_filter {
+  margin-bottom: 49px;
+}/*# sourceMappingURL=get-all-users.component.css.map */
