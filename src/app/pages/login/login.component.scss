@@ -4,6 +4,10 @@
   margin-top: -97px;
   padding: 9px;
 
+  @media(min-width: 768px){
+    max-width: 100%;
+  }
+
   &_form{
       margin-top:251px;
         height: 50%;
@@ -11,6 +15,10 @@
         background-image: url("https://res.cloudinary.com/dz3qrv6vz/image/upload/v1727623887/Lamborghini_Light_Blue_488789_jwk6ly.jpg");
         background-position: -494px -241px;
         color: yellow;
+        @media(min-width: 768px){
+          margin-top: 202px;
+          font-size: 31px;
+        }
   }
 
 }
