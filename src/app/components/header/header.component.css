@@ -5,4 +5,10 @@
   color: pink;
   font-size: 30px;
   margin-left: 40%;
+}
+@media (min-width: 768px) {
+  .headerTitle {
+    margin-left: 46%;
+    font-size: 44px;
+  }
 }/*# sourceMappingURL=header.component.css.map */

@@ -2,6 +2,11 @@
   background-color: pink;
   padding: 23px;
 }
+@media (min-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
 .container_card {
   max-width: 100%;
   margin-top: 46px;
@@ -47,7 +52,21 @@
   height: auto;
   padding: 14px;
 }
+@media (min-width: 768px) {
+  .container2 {
+    max-width: 100%;
+    margin-top: 4%;
+    padding: 3%;
+  }
+}
 .container2_card {
   height: auto;
   margin-left: 7%;
+}
+@media (min-width: 768px) {
+  .container2_card {
+    max-width: 100%;
+    margin-top: -1%;
+    margin-left: 31%;
+  }
 }/*# sourceMappingURL=filter-car.component.css.map */

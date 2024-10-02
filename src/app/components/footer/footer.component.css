@@ -11,6 +11,12 @@
   margin-left: -12px;
   margin-right: 36px;
 }
+@media (min-width: 768px) {
+  .footer_wrap {
+    width: 103%;
+    height: auto;
+  }
+}
 .footer_wrap-menu {
   float: left;
   width: 90%;

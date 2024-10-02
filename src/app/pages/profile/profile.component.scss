@@ -2,6 +2,9 @@
   background-color: pink;
   height: 86%;
   padding: 21px;
+  @media(min-width: 768px){
+    max-width: 100%;
+  }
 
 
   &_card{
@@ -10,6 +13,10 @@
     margin-bottom:26%;
     background-color:black;
     color: blueviolet;
+    @media(min-width:768px){
+      margin-top: 11%;
+      font-size: 24px;
+    }
 
     &-title{
       background-color: gray;

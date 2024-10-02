@@ -1,6 +1,11 @@
 .container {
   background-color: pink;
 }
+@media (min-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
 .container_filter {
   padding: 20px;
 }

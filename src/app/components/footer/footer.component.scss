@@ -11,6 +11,10 @@
     display: block;
     margin-left: -12px;
     margin-right: 36px;
+    @media (min-width: 768px) {
+      width: 103%;
+      height: auto;
+    }
 
       &-menu{
 

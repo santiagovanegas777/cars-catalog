@@ -2,6 +2,11 @@
   background-color: pink;
   padding: 23px;
 }
+@media (min-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
 .container_card {
   max-width: 100%;
   margin-top: 46px;

@@ -5,6 +5,17 @@
   background-position: -233px -465px;
   background-size: 199px;
 }
+@media (min-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .container_button {
+    max-width: 94%;
+    margin-left: 3%;
+  }
+}
 
 label {
   color: yellow;
