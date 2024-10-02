@@ -44,9 +44,15 @@
 }
 
 .container2{
-  margin-top: 16%;
+  margin-top: 9%;
   color: black;
   background-color: gray;
   margin-bottom: 29px;
-  height: 50%;
+  height: auto;
+  padding: 14px;
+
+  &_card{
+    height: auto;
+    margin-left: 7%;
+  }
 }
