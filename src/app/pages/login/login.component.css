@@ -1,12 +1,12 @@
 .container {
   height: 100%;
   background-color: pink;
-  margin-top: -64px;
-  padding: 34px;
+  margin-top: -97px;
+  padding: 9px;
 }
 .container_form {
-  margin-top: 97px;
-  margin-bottom: 33px;
+  margin-top: 251px;
+  height: 50%;
   padding: 18px;
   background-image: url("https://res.cloudinary.com/dz3qrv6vz/image/upload/v1727623887/Lamborghini_Light_Blue_488789_jwk6ly.jpg");
   background-position: -494px -241px;
