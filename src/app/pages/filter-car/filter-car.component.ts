@@ -31,6 +31,7 @@ public getCharactersName(cocheName: string){
     console.log(this.filterCharacter);
 
   });
+
 }
 
 public handleClic(){

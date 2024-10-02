@@ -1,9 +1,11 @@
 <section class="container">
   <div class="container_filter">
   <input class="form-control container_filter-input" type="text" placeholder="Search car here..." aria-label="readonly input example"  #fatherInput (keyup)="handleKeyUp(fatherInput.value)" name="filer-car"  >
+
   <div class="d-grid gap-2">
     <button class="btn btn-info" type="button" [routerLink]="['/filter-car', fatherInput.value.toUpperCase()]">Search</button>
     </div>
+
   <!-- <input class="filer" #fatherInput (keyup)="handleKeyUp(fatherInput.value)" class="filter" name="filer-car"  > -->
   <!-- <button class="filter-search" [routerLink]="['/filter-car', fatherInput.value.toUpperCase()]">Search</button> -->
 </div>

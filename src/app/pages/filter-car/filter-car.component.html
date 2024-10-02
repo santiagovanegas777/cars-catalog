@@ -1,6 +1,10 @@
 
 <section class="container" *ngIf="filterCharacter.length" >
+
   <mat-card class="container_card example-card" appearance="outlined" *ngFor="let character of filterCharacter ">
+
+
+
     <mat-card-header>
       <div mat-card-avatar class="container_card-img example-header-image"></div>
       <mat-card-title class="container_card-title">{{character.cocheName}}</mat-card-title>
@@ -38,13 +42,18 @@
 
   </mat-card>
 
+
+
+
   </section>
+  <div class="container2" *ngIf="filterCharacter.length === 0">
+    <p  class="parrafo" >coche</p>
+  </div>
 
-
-
-
-
-
+<!--
+  <div *ngIf="filterCharacter.length !== null">
+    <p >Car no disponible</p>
+  </div> -->
 
 
 <!-- <div *ngIf="filterCharacter.length">
