@@ -10,8 +10,11 @@
   background-color: black;
   color: blueviolet;
 }
-
-.section {
+.container_card-title {
+  background-color: gray;
+  color: black;
+}
+.container_card-role {
   background-color: gray;
   color: black;
 }/*# sourceMappingURL=profile.component.css.map */

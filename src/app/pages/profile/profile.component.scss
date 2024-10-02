@@ -10,11 +10,17 @@
     margin-bottom:26%;
     background-color:black;
     color: blueviolet;
+
+    &-title{
+      background-color: gray;
+      color: black;
+    }
+
+    &-role{
+      background-color:gray;
+      color: black;
+    }
   }
 
 }
 
-.section{
-  background-color: gray;
-    color: black;
-}
