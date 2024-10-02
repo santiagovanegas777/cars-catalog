@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"updated-car.component.css"}
+{"version":3,"sources":["updated-car.component.scss","updated-car.component.css"],"names":[],"mappings":"AAAA;EACE,gBAAA;EACA,mBAAA;EACA,sHAAA;EACA,kCAAA;EACA,sBAAA;ACCF;;ADEA;EACE,aAAA;ACCF","file":"updated-car.component.css"}

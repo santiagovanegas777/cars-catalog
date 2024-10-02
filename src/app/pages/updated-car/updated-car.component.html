@@ -1,4 +1,79 @@
-<p>updated-car works!</p>
+<section class="container">
+  <form class="row g-3 needs-validation" novalidate (ngSubmit)="handleSubmit()" [formGroup]="formGroup" >
+    <div class="col-md-4 position-relative">
+      <label for="validationTooltip01" class="form-label"  for="cocheName">Car Name</label>
+      <input type="text" class="form-control" id="validationTooltip01"  name="cocheName" id="cocheName" formControlName="cocheName" required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 position-relative">
+      <label for="validationTooltip02" class="form-label" for="cocheColor">Car Color</label>
+      <input type="text" class="form-control" id="validationTooltip02" name="cocheColor" id="cocheColor" formControlName="cocheColor" required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 position-relative">
+      <label for="validationTooltip02" class="form-label"  for="cocheImg">File</label>
+      <input type="file" (change)="getFile($event)" class="form-control" id="validationTooltip02"name="cocheImg" id="cocheImg" formControlName="cocheImg" required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 position-relative">
+      <label for="validationTooltip02" class="form-label"  for="cocheModel">Car Model</label>
+      <input type="number" class="form-control" id="validationTooltip02"  name="cocheModel" id="cocheModel" formControlName="cocheModel" required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 position-relative">
+      <label for="validationTooltipUsername" class="form-label"  for="cochePrice">Car Price</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="validationTooltipUsernamePrepend">€</span>
+        <input type="number" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" name="cochePrice" id="cochePrice" formControlName="cochePrice" required>
+        <div class="invalid-tooltip">
+          Please choose a unique and valid Price
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 position-relative">
+      <label for="validationTooltip03" class="form-label"  for="cochefuel" >Car Fuel</label>
+      <input type="text" class="form-control" id="validationTooltip03" name="cochefuel" id="cochefuel" formControlName="cochefuel" required>
+      <div class="invalid-tooltip">
+        Please provide a valid Fuel
+      </div>
+    </div>
+    <div class="col-md-6 position-relative">
+      <label for="validationTooltip03" class="form-label"   for="cochePower" >Car Power</label>
+      <input type="number" class="form-control" id="validationTooltip03" name="cochePower" id="cochePower" formControlName="cochePower" required>
+      <div class="invalid-tooltip">
+        Please provide a valid Phone
+      </div>
+    </div>
+
+    <div class="d-grid gap-2">
+      <button class="btn btn-info" type="submit">Submit form</button>
+
+    </div>
+  </form>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <p>updated-car works!</p>
 
 <form (ngSubmit)="handleSubmit()" [formGroup]="formGroup">
   <label for="cocheName">Car Name</label>
@@ -17,4 +92,4 @@
   <input type="number" name="cochePower" id="cochePower" formControlName="cochePower">
 
 <button type="submit">ENVIAR</button>
-</form>
+</form> -->
