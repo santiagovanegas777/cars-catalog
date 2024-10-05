@@ -1,7 +1,7 @@
 .container {
   background-color: pink;
   padding: 23px;
-  @media(min-width: 768px){
+  @media (min-width: 768px) {
     max-width: 100%;
   }
   &_card {
@@ -14,58 +14,65 @@
     }
     &-title {
       color: blueviolet;
+      @media (min-width: 768px) {
+        font-size: 27px;
+      }
+      &-subtitle {
+        @media (min-width: 768px) {
+          font-size: 23px;
+        }
+      }
     }
     &-p {
       color: white;
+      @media (min-width: 768px) {
+        font-size: 23px;
+      }
     }
   }
 
   &_section {
-    background-color:#9db3ac;
+    background-color: #9db3ac;
+    @media (min-width: 768px) {
+    }
 
     &-title {
       color: blue;
       margin-top: 5px;
       margin-left: 203px;
+      @media (min-width: 768px) {
+        font-size: 34px;
+        margin-left: 74%;
+      }
     }
 
     &-button {
       margin-left: 36%;
+      @media (min-width: 768px) {
+        margin-left: 50%;
+      }
 
       &-icondelete {
         color: red;
+        @media (min-width: 768px) {
+          font-size: 82px;
+          height: 74px;
+          width: 126px;
+        }
       }
       &-iconupdate {
         color: yellow;
+        @media (min-width: 768px) {
+          font-size: 82px;
+          height: 74px;
+          width: 126px;
+        }
       }
     }
+
   }
 }
 
-.btnupdate{
+.btnupdate {
   margin-top: 57px;
-}
-
-.container2{
-  margin-top: 9%;
-  color: black;
-  background-color: gray;
-  margin-bottom: 29px;
-  height: auto;
-  padding: 14px;
-  @media(min-width: 768px){
-    max-width: 100%;
-        margin-top: 4%;
-        padding: 3%
-  }
-
-  &_card{
-    height: auto;
-    margin-left: 7%;
-    @media(min-width: 768px){
-      max-width: 100%;
-      margin-top: -1%;
-      margin-left: 31%;
-    }
-  }
 }

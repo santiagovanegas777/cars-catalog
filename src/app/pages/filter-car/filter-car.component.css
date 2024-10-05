@@ -19,8 +19,23 @@
 .container_card-title {
   color: blueviolet;
 }
+@media (min-width: 768px) {
+  .container_card-title {
+    font-size: 27px;
+  }
+}
+@media (min-width: 768px) {
+  .container_card-title-subtitle {
+    font-size: 23px;
+  }
+}
 .container_card-p {
   color: white;
+}
+@media (min-width: 768px) {
+  .container_card-p {
+    font-size: 23px;
+  }
 }
 .container_section {
   background-color: #9db3ac;
@@ -30,43 +45,41 @@
   margin-top: 5px;
   margin-left: 203px;
 }
+@media (min-width: 768px) {
+  .container_section-title {
+    font-size: 34px;
+    margin-left: 74%;
+  }
+}
 .container_section-button {
   margin-left: 36%;
+}
+@media (min-width: 768px) {
+  .container_section-button {
+    margin-left: 50%;
+  }
 }
 .container_section-button-icondelete {
   color: red;
 }
+@media (min-width: 768px) {
+  .container_section-button-icondelete {
+    font-size: 82px;
+    height: 74px;
+    width: 126px;
+  }
+}
 .container_section-button-iconupdate {
   color: yellow;
+}
+@media (min-width: 768px) {
+  .container_section-button-iconupdate {
+    font-size: 82px;
+    height: 74px;
+    width: 126px;
+  }
 }
 
 .btnupdate {
   margin-top: 57px;
-}
-
-.container2 {
-  margin-top: 9%;
-  color: black;
-  background-color: gray;
-  margin-bottom: 29px;
-  height: auto;
-  padding: 14px;
-}
-@media (min-width: 768px) {
-  .container2 {
-    max-width: 100%;
-    margin-top: 4%;
-    padding: 3%;
-  }
-}
-.container2_card {
-  height: auto;
-  margin-left: 7%;
-}
-@media (min-width: 768px) {
-  .container2_card {
-    max-width: 100%;
-    margin-top: -1%;
-    margin-left: 31%;
-  }
 }/*# sourceMappingURL=filter-car.component.css.map */
