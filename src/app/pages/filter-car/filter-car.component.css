@@ -82,4 +82,69 @@
 
 .btnupdate {
   margin-top: 57px;
+}
+
+.container2 {
+  width: 100%;
+  height: 86%;
+  background-color: pink;
+}
+@media (min-width: 768px) {
+  .container2 {
+    height: 91%;
+  }
+}
+.container2_card {
+  width: 100%;
+  height: 96%;
+}
+@media (min-width: 768px) {
+  .container2_card {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .container2_card-img {
+    height: 70%;
+  }
+}
+.container2_card-body {
+  margin-top: 6px;
+}
+@media (min-width: 768px) {
+  .container2_card-body {
+    margin-top: 24px;
+  }
+}
+.container2_card-title {
+  font-size: 25px;
+  color: red;
+}
+@media (min-width: 768px) {
+  .container2_card-title {
+    font-size: 55px;
+  }
+}
+.container2_card-button {
+  font-size: 23px;
+  margin-left: 24%;
+  margin-top: 24px;
+}
+@media (min-width: 768px) {
+  .container2_card-button {
+    margin-left: 34%;
+    font-size: 34px;
+  }
+}
+.container2_card-text {
+  color: black;
+  font-size: 22px;
+}
+@media (min-width: 768px) {
+  .container2_card-text {
+    font-size: 28px;
+    margin-top: 52px;
+    padding: 3px;
+  }
 }/*# sourceMappingURL=filter-car.component.css.map */
