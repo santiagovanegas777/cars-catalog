@@ -3,22 +3,52 @@
   height: auto;
   margin-top: 36px;
   padding: 39px;
+  @media(min-width: 768px){
+    max-width: 100%;
+  }
 
   &_card{
      background-color: gray;
      padding: 9px;
      height: auto;
+     @media(min-width: 768px){
+      max-width: 100%;
+    }
 
      &-body{
       background-color:lightblue;
-      color: blue;
+      color: black;
       padding: 3px;
       margin-bottom: 19px;
+      width: 100%;
+      @media(min-width: 768px){
+        max-width: 100%;
+
+        padding: 10px;
+        font-size: 27px;
+      }
+      &-title{
+      color: blue;
+        @media(min-width: 768px){
+          font-size: 27px;
+        }
+      }
+
+      &-subtitle{
+      color: gray;
+      @media(min-width: 768px){
+        font-size: 27px;
+      }
+      }
      }
   }
 
   &_filter{
     margin-bottom: 49px;
+    @media(min-width: 768px){
+      max-width: 100%;
+      font-size: 35px;
+    }
   }
 }
 

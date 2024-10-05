@@ -4,17 +4,57 @@
   margin-top: 36px;
   padding: 39px;
 }
+@media (min-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
 .container_card {
   background-color: gray;
   padding: 9px;
   height: auto;
 }
+@media (min-width: 768px) {
+  .container_card {
+    max-width: 100%;
+  }
+}
 .container_card-body {
   background-color: lightblue;
-  color: blue;
+  color: black;
   padding: 3px;
   margin-bottom: 19px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .container_card-body {
+    max-width: 100%;
+    padding: 10px;
+    font-size: 27px;
+  }
+}
+.container_card-body-title {
+  color: blue;
+}
+@media (min-width: 768px) {
+  .container_card-body-title {
+    font-size: 27px;
+  }
+}
+.container_card-body-subtitle {
+  color: gray;
+}
+@media (min-width: 768px) {
+  .container_card-body-subtitle {
+    font-size: 27px;
+  }
 }
 .container_filter {
   margin-bottom: 49px;
+}
+@media (min-width: 768px) {
+  .container_filter {
+    max-width: 100%;
+    font-size: 35px;
+  }
 }/*# sourceMappingURL=get-all-users.component.css.map */

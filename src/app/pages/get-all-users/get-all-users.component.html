@@ -1,9 +1,9 @@
 <section class="container" *ngIf="userList.length">
   <input type="text" class="form-control container_filter" name="filterUser" placeholder="Search User" [(ngModel)]="filterUser"/>
-  <div class="card container_card" style="width: 18rem;" >
+  <div class="card container_card" >
     <div class="card-body container_card-body " *ngFor="let user of userList | filteruser:filterUser">
-      <h3 class="card-title">Name:{{user.nombre}}</h3>
-      <h4 class="card-subtitle mb-2 text-body-secondary">Id:{{user._id}}</h4>
+      <h3 class="card-title container_card-body-title">Name:{{user.nombre}}</h3>
+      <h4 class="card-subtitle mb-2 text-body-secondary container_card-body-subtitle">Id:{{user._id}}</h4>
       <p class="card-text">Address: {{user.direccion}}</p>
       <p class="card-text">LastName:{{user.apellidos}}</p>
       <p class="card-text">Email: {{user.email}}</p>
