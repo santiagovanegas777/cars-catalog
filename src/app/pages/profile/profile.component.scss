@@ -1,33 +1,47 @@
-.container{
+.container {
   background-color: pink;
-  height: 86%;
+  height: 90%;
   padding: 21px;
-  @media(min-width: 768px){
+  @media (min-width: 768px) {
     max-width: 100%;
   }
 
-
-  &_card{
+  &_card {
     width: 100%;
     margin-top: 18%;
-    margin-bottom:26%;
-    background-color:black;
+    margin-bottom: 26%;
+    background-color: black;
     color: blueviolet;
-    @media(min-width:768px){
-      margin-top: 11%;
-      font-size: 24px;
+    font-size: 18px;
+    @media (min-width: 768px) {
+      margin-top: 21%;
+      font-size: 28px;
     }
 
-    &-title{
+    &-title {
+      background-color: gray;
+      color: black;
+
+      &-Id {
+        font-size: 18px;
+        color: white;
+        @media (min-width: 768px) {
+          font-size: 24px;
+        }
+      }
+    }
+
+    &-role {
       background-color: gray;
       color: black;
     }
 
-    &-role{
-      background-color:gray;
-      color: black;
+    &-button {
+      margin: 8px;
+      @media (min-width: 768px) {
+        font-size: 30px;
+        margin: 16px;
+      }
     }
   }
-
 }
-

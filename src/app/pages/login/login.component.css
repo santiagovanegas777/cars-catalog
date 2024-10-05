@@ -19,8 +19,29 @@
 }
 @media (min-width: 768px) {
   .container_form {
-    margin-top: 202px;
-    font-size: 31px;
+    margin-top: 264px;
+    font-size: 34px;
+    height: 50%;
+    padding: 30px;
+  }
+}
+.container_form-a {
+  text-align: center;
+}
+.container_form-button {
+  color: black;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .container_form-button {
+    color: blue;
+    font-size: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .container_form-button-login {
+    color: red;
+    font-size: 30px;
   }
 }
 
