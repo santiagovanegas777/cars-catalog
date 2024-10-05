@@ -2,18 +2,34 @@
   margin-top: 51px;
   margin-bottom: -1px;
   background-image: url("https://res.cloudinary.com/dz3qrv6vz/image/upload/v1725216797/coche/meraz5m7qntuhnvyfc94.webp");
-  background-position: -233px -465px;
-  background-size: 199px;
+  background-position: -176px -437px;
+  background-size: 50%;
+  max-width: 100%;
 }
 @media (min-width: 768px) {
   .container {
-    max-width: 100%;
+    height: 87%;
+    background-position: -312px -260px;
+    background-size: 352px;
   }
 }
+.container_form {
+  display: block;
+}
 @media (min-width: 768px) {
-  .container_button {
-    max-width: 94%;
-    margin-left: 3%;
+  .container_form {
+    height: 100%;
+    max-width: 100%;
+    padding: 14px;
+    font-size: 35px;
+  }
+}
+.container_form-div {
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  .container_form-div {
+    padding: 15px;
   }
 }
 
