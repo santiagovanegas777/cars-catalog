@@ -6,11 +6,24 @@
 
   &_filter{
     padding: 20px;
+    @media(min-width: 768px){
+      max-width: 100%;
+    }
 
     &-input{
       width: 100%;
       margin-top: 55px;
       margin-bottom: 8px;
+      @media(min-width: 768px){
+       font-size: 34px;
+      }
+    }
+
+    &-button{
+      @media(min-width: 768px){
+        max-width: 100%;
+        font-size: 34px;
+      }
     }
   }
 
@@ -26,10 +39,27 @@
 
     &-title{
       color: blueviolet;
+      @media(min-width: 768px){
+       font-size: 27px ;
+      }
+      &-subtitle{
+        @media(min-width: 768px){
+          font-size: 27px;
+        }
+      }
     }
 
     &-p{
       color: white;
+      @media(min-width: 768px){
+        font-size: 27px;
+      }
+    }
+    &-buttonDetail{
+      @media(min-width: 768px){
+        font-size: 259%;
+        margin-left: 78%
+      }
     }
   }
 

@@ -9,10 +9,26 @@
 .container_filter {
   padding: 20px;
 }
+@media (min-width: 768px) {
+  .container_filter {
+    max-width: 100%;
+  }
+}
 .container_filter-input {
   width: 100%;
   margin-top: 55px;
   margin-bottom: 8px;
+}
+@media (min-width: 768px) {
+  .container_filter-input {
+    font-size: 34px;
+  }
+}
+@media (min-width: 768px) {
+  .container_filter-button {
+    max-width: 100%;
+    font-size: 34px;
+  }
 }
 .container_card {
   max-width: 100%;
@@ -26,8 +42,29 @@
 .container_card-title {
   color: blueviolet;
 }
+@media (min-width: 768px) {
+  .container_card-title {
+    font-size: 27px;
+  }
+}
+@media (min-width: 768px) {
+  .container_card-title-subtitle {
+    font-size: 27px;
+  }
+}
 .container_card-p {
   color: white;
+}
+@media (min-width: 768px) {
+  .container_card-p {
+    font-size: 27px;
+  }
+}
+@media (min-width: 768px) {
+  .container_card-buttonDetail {
+    font-size: 259%;
+    margin-left: 78%;
+  }
 }
 .container_pagination {
   margin: 9px 34px 19px 27px;
