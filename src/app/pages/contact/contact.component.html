@@ -1,20 +1,46 @@
-<form class="contact" (submit)="sendEmail($event)">
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label" for="user_name">Name</label>
+<section class="container">
+<form class="container_contact" (submit)="sendEmail($event)">
+<div class="mb-3 container_contact-article">
+  <label for="exampleFormControlInput1" class="form-label container_contact-label" for="user_name">Name</label>
   <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" name="user_name">
 </div>
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label" for="user_email">Email address</label>
+<div class="mb-3 container_contact-article">
+  <label for="exampleFormControlInput1" class="form-label container_contact-label" for="user_email">Email address</label>
   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"  name="user_email">
 </div>
-<div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label"  for="message">Message</label>
+<div class="mb-3 container_contact-article">
+  <label for="exampleFormControlTextarea1" class="form-label container_contact-label"  for="message">Message</label>
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  name="message" placeholder="Message..."></textarea>
 </div>
-<div class="d-grid gap-2">
-  <button class="btn btn-info" type="submit">Submit Form</button>
+<div class="d-grid gap-2 container_contact-button">
+  <button class="btn btn-info container_contact-button-button" type="submit">Submit Form</button>
 </div>
 </form>
+
+<article class="container_article">
+  <h3>REDES SOCIALES</h3>
+            <div id="social" class=" container_article-asideBox">
+                <div class="twitter">
+                    <a href="#" class="icon container_article-a">t</a>
+                    <p class="container_article-overlay">
+                        twitter
+                    </p>
+                </div>
+                <div class="youtube">
+                    <a href="#" class="icon container_article-a">y</a>
+                    <p class="container_article-overlay">
+                        youtube
+                    </p>
+                </div>
+                <div class="facebook">
+                    <a href="#" class="icon container_article-a">f</a>
+                    <p class="container_article-overlay">
+                        facebook
+                    </p>
+                </div>
+            </div>
+</article>
+</section>
 
 
 
