@@ -128,4 +128,7 @@
 .container_article-overlay:hover {
   opacity: 1;
   transform: translateX(0%);
+}
+.container_article-img {
+  height: 10vh;
 }/*# sourceMappingURL=contact.component.css.map */
