@@ -68,4 +68,26 @@
 }
 .container_pagination {
   margin: 9px 34px 19px 27px;
+}
+@media (min-width: 768px) {
+  .container_pagination {
+    height: 80px;
+    margin-top: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .container_pagination-li {
+    padding: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .container_pagination-button {
+    font-size: 39px;
+    height: 58px;
+    margin-top: -19px;
+  }
+}
+
+.page-item {
+  font-size: 30px;
 }/*# sourceMappingURL=cars.component.css.map */

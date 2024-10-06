@@ -11,4 +11,10 @@
     margin-left: 46%;
     font-size: 44px;
   }
+}
+
+@media (min-width: 768px) {
+  .headerSubtitle {
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=header.component.css.map */

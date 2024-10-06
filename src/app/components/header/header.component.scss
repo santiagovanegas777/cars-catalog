@@ -10,3 +10,10 @@
     font-size: 44px;
   }
 }
+
+.headerSubtitle{
+  @media(min-width:768px) {
+    font-size: 30px;
+
+  }
+}

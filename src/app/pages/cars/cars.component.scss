@@ -65,6 +65,26 @@
 
   &_pagination{
     margin:9px 34px 19px 27px;
+    @media(min-width: 768px){
+      height: 80px;
+      margin-top: 50px;
+    }
+    &-li{
+      @media(min-width: 768px){
+        padding: 10px;
+      }
+    }
+
+    &-button{
+      @media(min-width: 768px){
+        font-size: 39px;
+        height: 58px;
+        margin-top: -19px;
+      }
+    }
   }
 }
 
+.page-item{
+  font-size: 30px;
+}

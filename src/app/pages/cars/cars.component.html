@@ -34,13 +34,13 @@
 </div>
 <nav  class="container_pagination" aria-label="Page navigation example">
   <ul class="pagination justify-content-center">
-    <li class="page-item">
-      <button class="page-link" (click)="handlePaginatior('prev')">Previous</button>
+    <li class="page-item container_pagination-li">
+      <button class="page-link container_pagination-button" (click)="handlePaginatior('prev')">Previous</button>
     </li>
-    <li class="page-item"><p class="page-link"> {{currenPage}}</p></li>
+    <li class="page-ite container_pagination-li"><p class="page-link container_pagination-button"> {{currenPage}}</p></li>
 
-    <li class="page-item">
-      <button class="page-link" (click)="handlePaginatior('next')">Next</button>
+    <li class="page-item container_pagination-li">
+      <button class="page-link container_pagination-button" (click)="handlePaginatior('next')">Next</button>
     </li>
   </ul>
 </nav>

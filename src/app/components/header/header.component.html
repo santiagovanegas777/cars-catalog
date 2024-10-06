@@ -6,40 +6,40 @@
     </button>
     <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Cars-catalog</h5>
+        <h5 class="offcanvas-title headerSubtitle" id="offcanvasDarkNavbarLabel">Cars-catalog</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="/"> Home</a>
+            <a class="nav-link active headerSubtitle" aria-current="page" routerLink="/"> Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"  *ngIf="!loginService.token" routerLink="/login" >Login</a>
+            <a class="nav-link headerSubtitle"  *ngIf="!loginService.token" routerLink="/login" >Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"  routerLink="/contact">Contact</a>
+            <a class="nav-link headerSubtitle"  routerLink="/contact">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" *ngIf="loginService.token" routerLink="/cars">Cars</a>
+            <a class="nav-link headerSubtitle" *ngIf="loginService.token" routerLink="/cars">Cars</a>
           </li>
           <li class="nav-item dropdown" *ngIf="loginService.token">
-            <a class="nav-link dropdown-toggle" routerLink="/profile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle headerSubtitle" routerLink="/profile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Profile
             </a>
             <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item" routerLink="/updateprofile">Edit Profile</a></li>
-              <li><a class="dropdown-item" routerLink="/removeprofile">Delete Profile</a></li>
+              <li><a class="dropdown-item headerSubtitle" routerLink="/updateprofile">Edit Profile</a></li>
+              <li><a class="dropdown-item headerSubtitle" routerLink="/removeprofile">Delete Profile</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><button class="dropdown-item"  *ngIf="loginService.token" mat-flat-button (click)="logout()">Logout</button></li>
+              <li><button class="dropdown-item headerSubtitle"  *ngIf="loginService.token" mat-flat-button (click)="logout()">Logout</button></li>
             </ul>
           </li>
         </ul>
         <form class="d-flex mt-3" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"  #fatherInput (keyup)="handleKeyUp(fatherInput.value)">
-          <button class="btn btn-success" type="button" [routerLink]="['/filter-car', fatherInput.value.toUpperCase()]">Search</button>
+          <input class="form-control me-2 headerSubtitle" type="search" placeholder="Search" aria-label="Search"  #fatherInput (keyup)="handleKeyUp(fatherInput.value)">
+          <button class="btn btn-success headerSubtitle" type="button" [routerLink]="['/filter-car', fatherInput.value.toUpperCase()]">Search</button>
         </form>
       </div>
     </div>
