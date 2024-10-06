@@ -1,10 +1,11 @@
 .container {
   margin-top: 51px;
-  margin-bottom: -1px;
+  margin-bottom: 29px;
   background-image: url("https://res.cloudinary.com/dz3qrv6vz/image/upload/v1725216797/coche/meraz5m7qntuhnvyfc94.webp");
   background-position: -176px -437px;
   background-size: 50%;
   max-width: 100%;
+  height: auto;
 }
 @media (min-width: 768px) {
   .container {
@@ -16,6 +17,7 @@
 }
 .container_form {
   display: block;
+  padding: 6px;
 }
 @media (min-width: 768px) {
   .container_form {

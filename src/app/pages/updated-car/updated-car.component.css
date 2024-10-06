@@ -1,25 +1,28 @@
 .container {
-  margin-top: 51px;
-  margin-bottom: -1px;
-  background-image: url("https://res.cloudinary.com/dz3qrv6vz/image/upload/v1725216797/coche/meraz5m7qntuhnvyfc94.webp");
+  margin-top: 35px;
+  margin-bottom: 29px;
+  background-image: url(https://res.cloudinary.com/dz3qrv6vz/image/upload/v1725216797/coche/meraz5m7qntuhnvyfc94.webp);
   background-position: -176px -437px;
   background-size: 50%;
   max-width: 100%;
+  height: auto;
 }
 @media (min-width: 768px) {
   .container {
-    height: 87%;
+    height: auto;
     background-position: -312px -260px;
     background-size: 352px;
   }
 }
 .container_form {
   display: block;
+  padding: 5px;
 }
 @media (min-width: 768px) {
   .container_form {
     height: 100%;
     max-width: 100%;
+    margin-bottom: 28px;
     padding: 14px;
     font-size: 35px;
   }
