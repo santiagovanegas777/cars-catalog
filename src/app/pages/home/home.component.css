@@ -1,6 +1,21 @@
+.container {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 1024px) {
+  .container_prueba {
+    height: 60vh;
+  }
+}
+
 .carousel {
   margin-top: 100px;
   margin-bottom: 45px;
+}
+@media (min-width: 1024px) {
+  .carousel {
+    height: auto;
+  }
 }
 
 @media (min-width: 320px) {

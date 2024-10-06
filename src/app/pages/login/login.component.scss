@@ -1,60 +1,54 @@
-.container{
+.container {
   // height: auto;
   // background-color: pink;
   // margin-top: -97px;
   // padding: 9px;
   height: auto;
-    background-color: pink;
+  background-color: pink;
+  padding: 9px;
 
-    padding: 9px;
-
-
-  @media(min-width: 768px){
+  @media (min-width: 768px) {
     max-width: 100%;
     height: auto;
   }
 
-  &_form{
-      // margin-top:251px;
-      margin-top: 30%;
-        margin-bottom: 58%;
-        padding: 15px;
-        background-image: url("https://res.cloudinary.com/dz3qrv6vz/image/upload/v1727623887/Lamborghini_Light_Blue_488789_jwk6ly.jpg");
-        background-position: -494px -241px;
-        color: yellow;
-        @media(min-width: 768px){
-          margin-top: 197px;
-          font-size: 34px;
-          height: 50%;
-          padding: 30px;
-          margin-bottom: 68px;
-        }
+  &_form {
+    // margin-top:251px;
+    margin-top: 30%;
+    margin-bottom: 58%;
+    padding: 15px;
+    background-image: url("https://res.cloudinary.com/dz3qrv6vz/image/upload/v1727623887/Lamborghini_Light_Blue_488789_jwk6ly.jpg");
+    background-position: -494px -241px;
+    color: yellow;
+    @media (min-width: 768px) {
+      margin-top: 197px;
+      font-size: 34px;
+      height: 50%;
+      padding: 30px;
+      margin-bottom: 68px;
+    }
 
-        &-a{
-          text-align: center;
-        }
-        &-button{
-          color: black;
-          width: 100%;
-          @media(min-width: 768px){
-            color: blue;
-            font-size: 30px;
-          }
+    &-a {
+      text-align: center;
+    }
+    &-button {
+      color: black;
+      width: 100%;
+      @media (min-width: 768px) {
+        color: blue;
+        font-size: 30px;
+      }
 
-          &-login{
-            @media(min-width: 768px){
-              color: red;
-              font-size: 30px;
-            }
-          }
+      &-login {
+        @media (min-width: 768px) {
+          color: red;
+          font-size: 30px;
         }
-
+      }
+    }
   }
-
 }
 
-
-
-.gap-2{
+.gap-2 {
   padding: 9px;
 }
