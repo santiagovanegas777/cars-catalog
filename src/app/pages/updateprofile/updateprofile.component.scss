@@ -6,9 +6,10 @@
   background-size: 50%;
   max-width: 100%;
   @media(min-width: 768px){
-    height: 87%;
+    height: auto;
     background-position: -312px -260px;
     background-size: 352px;
+    margin-bottom: 28px;
   }
 
   &_form{

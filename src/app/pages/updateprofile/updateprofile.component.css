@@ -8,9 +8,10 @@
 }
 @media (min-width: 768px) {
   .container {
-    height: 87%;
+    height: auto;
     background-position: -312px -260px;
     background-size: 352px;
+    margin-bottom: 28px;
   }
 }
 .container_form {
