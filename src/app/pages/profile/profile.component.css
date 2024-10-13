@@ -23,6 +23,13 @@
     font-size: 28px;
   }
 }
+@media (min-width: 1200px) {
+  .container_card {
+    margin-top: 3%;
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+}
 .container_card-title {
   background-color: gray;
   color: black;
