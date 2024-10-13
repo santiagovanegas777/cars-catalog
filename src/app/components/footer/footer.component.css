@@ -17,6 +17,13 @@
     height: auto;
   }
 }
+@media (min-width: 1200px) {
+  .footer_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+  }
+}
 .footer_wrap-menu {
   float: left;
   width: 90%;
@@ -25,6 +32,11 @@
   text-align: center;
   color: white;
   font-family: "TrebuchetMS";
+}
+@media (min-width: 1200px) {
+  .footer_wrap-menu {
+    grid-column: 1;
+  }
 }
 .footer_wrap-location {
   float: left;
@@ -35,6 +47,11 @@
   color: white;
   font-family: "TrebuchetMS";
 }
+@media (min-width: 1200px) {
+  .footer_wrap-location {
+    grid-column: 2;
+  }
+}
 .footer_wrap-info {
   float: left;
   width: 90%;
@@ -43,6 +60,11 @@
   text-align: center;
   color: white;
   font-family: "TrebuchetMS";
+}
+@media (min-width: 1200px) {
+  .footer_wrap-info {
+    grid-column: 3;
+  }
 }
 
 .footer a {
