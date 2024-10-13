@@ -14,6 +14,11 @@
     max-width: 100%;
   }
 }
+@media (min-width: 1200px) {
+  .container_filter {
+    max-width: 99%;
+  }
+}
 .container_filter-input {
   width: 100%;
   margin-top: 55px;
@@ -22,6 +27,11 @@
 @media (min-width: 768px) {
   .container_filter-input {
     font-size: 34px;
+  }
+}
+@media (min-width: 1200px) {
+  .container_filter-input {
+    font-size: 36px;
   }
 }
 @media (min-width: 768px) {
@@ -35,9 +45,22 @@
   margin-bottom: 9px;
   background-color: black;
 }
+@media (min-width: 1200px) {
+  .container_card {
+    width: 32%;
+    display: inline-block;
+    padding: 4px;
+    margin: 7px;
+  }
+}
 .container_card-image {
   background-image: url("https://res.cloudinary.com/dz3qrv6vz/image/upload/v1723031051/coche/OIP_clwghk.jpg");
   background-size: cover;
+}
+@media (min-width: 1200px) {
+  .container_card-img {
+    max-width: 100%;
+  }
 }
 .container_card-title {
   color: blueviolet;
@@ -64,6 +87,11 @@
   .container_card-buttonDetail {
     font-size: 259%;
     margin-left: 78%;
+  }
+}
+@media (min-width: 1200px) {
+  .container_card-buttonDetail {
+    margin-left: 50%;
   }
 }
 .container_pagination {

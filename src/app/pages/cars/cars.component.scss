@@ -4,10 +4,14 @@
     max-width: 100%;
   }
 
+
   &_filter{
     padding: 20px;
     @media(min-width: 768px){
       max-width: 100%;
+    }
+    @media(min-width:1200px){
+    max-width: 99%;
     }
 
     &-input{
@@ -16,6 +20,9 @@
       margin-bottom: 8px;
       @media(min-width: 768px){
        font-size: 34px;
+      }
+      @media(min-width: 1200px){
+        font-size: 36px;
       }
     }
 
@@ -31,10 +38,24 @@
     max-width: 100%;
     margin-bottom: 9px;
     background-color: black;
+    @media(min-width: 1200px){
+      width: 32%;
+      display: inline-block;
+      padding: 4px;
+      margin: 7px;
+
+    }
 
     &-image{
       background-image: url('https://res.cloudinary.com/dz3qrv6vz/image/upload/v1723031051/coche/OIP_clwghk.jpg');
       background-size: cover;
+
+    }
+
+    &-img{
+      @media(min-width: 1200px){
+        max-width: 100%;
+      }
     }
 
     &-title{
@@ -59,6 +80,9 @@
       @media(min-width: 768px){
         font-size: 259%;
         margin-left: 78%
+      }
+      @media(min-width: 1200px){
+        margin-left: 50%;
       }
     }
   }
