@@ -26,7 +26,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-image: url("https://res.cloudinary.com/dz3qrv6vz/image/upload/v1725185438/coche/ygnrrfghl3rfk8ecbsav.webp");
-    background-position: 496px -40px;
+    background-position: 554px -40px;
     background-size: 63%
   }
   &_contact {
@@ -88,6 +88,16 @@
       display: block;
       margin-top: 104px;
       color: red;
+
+    }
+    &-title{
+      @media(min-width: 1200px){
+        font-size: 69px;
+        color: beige;
+        margin-bottom: 81px;
+        margin-top: -35px;
+        text-align: center;
+      }
     }
 
     &-aside-Box{
