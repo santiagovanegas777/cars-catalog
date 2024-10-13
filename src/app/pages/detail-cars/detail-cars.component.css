@@ -7,6 +7,12 @@
     max-width: 100%;
   }
 }
+@media (min-width: 1200px) {
+  .container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+}
 .container_card {
   max-width: 100%;
   margin-top: 46px;
@@ -16,7 +22,8 @@
   .container_card {
     height: 86vh;
     max-width: 65%;
-    margin-left: 19%;
+    margin-left: 35%;
+    grid-column: 1;
   }
 }
 .container_card-img {
@@ -52,6 +59,18 @@
 }
 .container_section {
   background-color: #9db3ac;
+  margin-top: -12px;
+  margin-bottom: 18px;
+}
+@media (min-width: 1200px) {
+  .container_section {
+    grid-column: 2;
+    max-width: 100%;
+    height: 50%;
+    margin-top: 175px;
+    margin-left: 6px;
+    padding: 5px;
+  }
 }
 .container_section-title {
   color: blue;
@@ -64,12 +83,24 @@
     margin-left: 74%;
   }
 }
+@media (min-width: 1200px) {
+  .container_section-title {
+    font-size: 33px;
+    margin-left: 9%;
+    margin-bottom: 51px;
+  }
+}
 .container_section-button {
   margin-left: 36%;
 }
 @media (min-width: 768px) {
   .container_section-button {
     margin-left: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .container_section-button {
+    margin-left: 45%;
   }
 }
 .container_section-button-icondelete {

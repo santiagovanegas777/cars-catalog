@@ -19,23 +19,7 @@
 
     </mat-card-content>
 
-    <section class="container_section" *ngIf="loginService.userRole.length === 5">
-      <div class="example-label container_section-title">Options</div>
-      <div class="example-button-row">
-        <div class="example-flex-container">
-          <div class="example-button-container container_section-button">
-            <button mat-fab aria-label="Example icon button with a delete icon"  (click)="handleClic()" *ngIf="loginService.userRole.length === 5">
-              <mat-icon class="container_section-button-icondelete">delete</mat-icon>
-            </button>
-          </div>
-          <div class="example-button-container container_section-button">
-            <button mat-fab aria-label="Example icon button with a heart icon" [routerLink]="['/updatecar', characterDetail._id]" *ngIf="loginService.userRole.length === 5">
-              <mat-icon class="container_section-button-iconupdate">update</mat-icon>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
+
 
 
     <!-- <button mat-button (click)="handleClic()" *ngIf="loginService.userRole.length === 5">Delete</button>
@@ -43,7 +27,23 @@
     <button mat-button [routerLink]="['/updatecar', characterDetail._id]" *ngIf="loginService.userRole.length === 5" class="btnupdate">Update</button> -->
 
   </mat-card>
-
+  <section class="container_section" *ngIf="loginService.userRole.length === 5">
+    <div class="example-label container_section-title">Options</div>
+    <div class="example-button-row">
+      <div class="example-flex-container">
+        <div class="example-button-container container_section-button">
+          <button mat-fab aria-label="Example icon button with a delete icon"  (click)="handleClic()" *ngIf="loginService.userRole.length === 5">
+            <mat-icon class="container_section-button-icondelete">delete</mat-icon>
+          </button>
+        </div>
+        <div class="example-button-container container_section-button">
+          <button mat-fab aria-label="Example icon button with a heart icon" [routerLink]="['/updatecar', characterDetail._id]" *ngIf="loginService.userRole.length === 5">
+            <mat-icon class="container_section-button-iconupdate">update</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
   </section>
 
 
