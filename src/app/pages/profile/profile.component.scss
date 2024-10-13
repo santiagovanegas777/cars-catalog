@@ -2,6 +2,10 @@
   background-color: pink;
   height: 90%;
   padding: 21px;
+  @media (min-width: 576px) {
+    max-width: 100%;
+    height: auto;
+  }
   @media (min-width: 768px) {
     max-width: 100%;
     height: auto;

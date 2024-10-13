@@ -1,6 +1,12 @@
 .container {
   background-color: pink;
 }
+@media (min-width: 576px) {
+  .container {
+    max-width: 100%;
+    height: auto;
+  }
+}
 @media (min-width: 768px) {
   .container {
     max-width: 100%;

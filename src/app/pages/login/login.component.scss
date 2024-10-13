@@ -6,7 +6,10 @@
   height: auto;
   background-color: pink;
   padding: 9px;
-
+  @media (min-width: 576px) {
+    max-width: 100%;
+    height: auto;
+  }
   @media (min-width: 768px) {
     max-width: 100%;
     height: auto;

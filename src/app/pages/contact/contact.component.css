@@ -4,6 +4,12 @@
   background-color: black;
   padding: 2px;
 }
+@media (min-width: 576px) {
+  .container {
+    max-width: 100%;
+    height: auto;
+  }
+}
 @media (min-width: 768px) {
   .container {
     max-width: 100%;
