@@ -1,3 +1,5 @@
+
+
 export interface CharacterInterface {
   _id: string;
   cocheName: string;
@@ -8,6 +10,7 @@ export interface CharacterInterface {
   cochefuel: string;
   cocheColor:string
 }
+
 
 export interface CharacterResponseInterface{
   data:{
@@ -34,4 +37,26 @@ export interface CarsInterface {
   cochePrice: number;
   cochefuel: string;
   cocheColor:string
+}
+
+export interface User{
+  apellidos: string;
+  direccion: string;
+  email: string;
+  nombre:string;
+  password: string;
+  role: string;
+  telefono: number;
+  username: string;
+  _id: string;
+}
+
+export interface response{
+  token: string;
+  userInfo: User;
+}
+
+export interface obj{
+  email: string;
+  password: string;
 }

@@ -1,4 +1,4 @@
-import { _idInterface } from 'src/app/models/character.model';
+import {  User } from 'src/app/models/character.model';
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProfileService } from './profile.service';
@@ -10,7 +10,7 @@ import { LoginService } from '../login/login.service';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent {
-  userDetail: any={};
+  userDetail!: User;
 
   constructor(private ruta:ActivatedRoute, private profileService:ProfileService, public loginService:LoginService){}
 

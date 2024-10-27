@@ -14,7 +14,7 @@ import { LoginService } from '../login/login.service';
 export class CarsComponent {
   characterList: CharacterInterface[] = [];
   currenPage = 1;
-  characterDetail: any=[];
+  // characterDetail: any=[];
   public inputText = '';
 
   // public inputText: string = '';

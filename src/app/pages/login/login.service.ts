@@ -4,20 +4,21 @@ import { Injectable } from '@angular/core';
 import { Observable, map } from 'rxjs';
 import { environment } from 'src/environments/environment.development';
 import { Location } from '@angular/common';
+import { response, User } from 'src/app/models/character.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LoginService {
   token: string | null = sessionStorage.getItem('token-app');
-  userInfo: any;
+  userInfo!: User;
   userRole: string = "user";
 
 
   constructor(private httpClient: HttpClient ,private router: Router,private location: Location) { }
 
 
-  login(obj:any): Observable<any> {
+  login(obj:User): Observable<response> {
    return this.httpClient.post(`${environment.API}/users/login`, obj).pipe(
     map((response: any) =>{
       this.token = response.token;
@@ -29,7 +30,7 @@ export class LoginService {
       this.location.back();
       // this.router.navigate(['/..'])
 
-
+console.log(response);
       return response;
 
     })
