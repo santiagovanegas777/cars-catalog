@@ -19,8 +19,10 @@ export class GetAllUsersComponent {
 
   public getAllUser() {
     this.getAlluserService.getApiUser().subscribe((data: User[]) => {
-      this.userList = this.userList = data;
+
+      this.userList =data;
       console.log(this.userList);
+
     });
   }
 }

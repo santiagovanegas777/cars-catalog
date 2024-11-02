@@ -10,7 +10,7 @@ import { LoginService } from 'src/app/pages/login/login.service';
 
 })
 export class HeaderComponent {
- userRole :any ={};
+//  userRole :any ={};
  public inputText = '';
 
   constructor(public loginService: LoginService, private router: Router){}

@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
 import { LoginService } from '../login/login.service';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-deleteprofile',
   templateUrl: './deleteprofile.component.html',
@@ -20,7 +21,8 @@ export class DeleteprofileComponent {
     this.initForm();
   }
   public getUserIdDelete(){
-    this.userDetail = this.loginService.userInfo._id;
+
+    this.userDetail= this.loginService.userInfo._id;
   }
 
   private initForm(){
