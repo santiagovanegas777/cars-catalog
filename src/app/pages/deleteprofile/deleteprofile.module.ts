@@ -5,8 +5,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DeleteprofileRoutingModule } from './deleteprofile-routing.module';
 import { DeleteprofileComponent } from './deleteprofile.component';
 
-
-
 @NgModule({
   declarations: [
     DeleteprofileComponent
