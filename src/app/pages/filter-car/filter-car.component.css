@@ -181,6 +181,12 @@
     font-size: 34px;
   }
 }
+@media (min-width: 1200px) {
+  .container2_card-button {
+    font-size: 20px;
+    margin-top: 2px;
+  }
+}
 .container2_card-text {
   color: black;
   font-size: 22px;
