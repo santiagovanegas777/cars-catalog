@@ -12,7 +12,7 @@ import { CharacterInterface } from 'src/app/models/character.model';
 })
 export class FilterCarComponent {
 
-  filterCharacter: any;
+  filterCharacter:any;
 
 
 constructor(private filterNameCarService: FilterCarService, private ruta:ActivatedRoute,public loginService: LoginService,public deleteCar: DeleteCarsService, private router: Router){}
@@ -29,6 +29,7 @@ public getCharactersName(cocheName: string){
   this.filterNameCarService.getApiNameCharacter(cocheName).subscribe((data:CharacterInterface)=>{
     console.log(data);
     this.filterCharacter = data;
+
 
     console.log(this.filterCharacter);
 

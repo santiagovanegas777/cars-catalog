@@ -28,8 +28,10 @@ export interface _idInterface {
   _id: string;
 }
 
-export interface CarsInterface {
+export interface filtercarInterface {
 
+  coches:{
+    _id: string;
   cocheName: string;
   cocheImg: string;
   cocheModel: number;
@@ -37,6 +39,7 @@ export interface CarsInterface {
   cochePrice: number;
   cochefuel: string;
   cocheColor:string
+  }
 }
 
 export interface User{
